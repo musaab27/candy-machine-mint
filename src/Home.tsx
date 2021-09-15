@@ -16,7 +16,7 @@ import {
   awaitTransactionSignatureConfirmation,
   getCandyMachineState,
   mintOneToken,
-  shortenAddress,
+  // shortenAddress,
 } from "./candy-machine";
 
 const ConnectButton = styled(WalletDialogButton)``;
@@ -160,22 +160,17 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      {wallet.connected && (
-        <p>Address: {shortenAddress(wallet.publicKey?.toBase58() || "")}</p>
-      )}
-
-      {wallet.connected && (
-        <p>Balance: {(balance || 0).toLocaleString()} SOL</p>
-      )}
 
       <MintContainer>
         {!wallet.connected ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
+          <ConnectButton color ="secondary" variant="outlined" className="connectbtn" style={{ color: "white", borderColor: "white", backgroundColor: "#40647C", width: '250px', fontSize: "12px", fontFamily: "Bungee, sans-serif", fontWeight: 900}}><b>Connect Wallet</b></ConnectButton>
         ) : (
-          <MintButton
+          <MintButton  style={{color: '#FF66C4', borderColor: "#FF66C4", backgroundColor: "#40647C", width: '250px', fontSize: "20px", fontWeight: 900}}
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
-            variant="contained"
+            variant="outlined"
+            color ="secondary"
+            className="connectbtn"
           >
             {isSoldOut ? (
               "SOLD OUT"
@@ -196,6 +191,16 @@ const Home = (props: HomeProps) => {
           </MintButton>
         )}
       </MintContainer>
+
+      {/* <div style={{color: "white",}}>
+      {wallet.connected && (
+        <p>Address: {shortenAddress(wallet.publicKey?.toBase58() || "")}</p>
+      )}
+
+      {wallet.connected && (
+        <p>Balance: {(balance || 0).toLocaleString()} SOL</p>
+      )}
+      </div> */}
 
       <Snackbar
         open={alertState.open}
