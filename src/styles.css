@@ -365,7 +365,23 @@ header .bear-strip-right {
   padding: 0;
   min-height: 64px;
 }
-
+.mint-container {
+display: flex;
+    position: relative;
+    width: 75%;
+    margin-left: 70px;
+    height: 260px;
+    background: #ffec83;
+    color: #111;
+    border: 2px solid #000;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 #000;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
 /* What Section */
 #what {
   padding: 0 0;
@@ -489,12 +505,12 @@ header .bear-strip-right {
 }
 
 #faq li{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 22px;
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
   background-color: transparent;
 }
 #moveAppBar {
@@ -529,7 +545,7 @@ header .bear-strip-right {
 }
 
 #faq p {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: left;
   font-family: "Sora", sans-serif;
   font-size: 22px;
@@ -712,7 +728,7 @@ header .bear-strip-right {
 /* //team component */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 16px 40px;
   margin: 0 auto;
   

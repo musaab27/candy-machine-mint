@@ -73,7 +73,6 @@ const App = () => {
             txTimeout={txTimeout}
           /> */}
             <Header/>
-            <Testimonials/>
             <What/>
             <Faq/>
             <Team/>

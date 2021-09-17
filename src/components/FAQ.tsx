@@ -15,13 +15,15 @@ const useStyles = makeStyles((theme) => ({
 
   },
   styles: {
-    background: "#CCDC6C",
+    background: "#18E4B4",
     BorderColor: "white",
     borderWidth: "medium"
   },
   heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
+    fontSize: theme.typography.pxToRem(25),
+    fontWeight: 900,
+    fontStyle: "normal",
+
   },
 }));
 
@@ -40,7 +42,7 @@ export const Faq = () => {
 
     <div id="faq">
       <div className="container">
-        <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center" }}>FAQ</h2>
+        <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center", color: "black" }}>FAQ</h2>
 
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className={classes.styles}>
           <AccordionSummary
