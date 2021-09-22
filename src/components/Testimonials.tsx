@@ -1,4 +1,9 @@
 
+import Jim from '../Jim.jpg';
+import gordon from '../gordon.jpg';
+import Forbes from '../Forbes.jpg';
+import sharkTank from '../shark-tank.jpg';
+
 import { Carousel } from 'antd';
 import 'antd/dist/antd.css';
 
@@ -15,7 +20,7 @@ const TestimonialContainer = () => {
             <div className="testim-box" >
               <p style={{marginBottom: "0px", fontFamily: "Montserrat, sans-serif"}}>"These NFTs are literally Shit"</p>
               <div className="team-card">
-                <img src="img/forbes.JPG" alt="" style={{marginTop: "100px"}} />
+                <img src={Forbes} alt="" style={{marginTop: "100px"}} />
               </div>
             </div>
 
@@ -59,21 +64,21 @@ const TestimonialContainer2 = () => {
             <div className="testim-box">
               <p style={{marginBottom: "0px", fontFamily: "Montserrat, sans-serif"}}>"We'd rather burn our money than invest in this.."</p>
               <div className="team-card">
-                <img src="img/shark-tank.JPG" alt="" />
+                <img src={sharkTank} alt="" />
               </div>
             </div>
 
             <div className="testim-box">
               <p style={{marginBottom: "0px", fontFamily: "Montserrat, sans-serif"}}>"How do people even find value in this shit. I can't believe they're buying it."</p>
               <div className="team-card">
-                <img src="img/Jim.JPG" alt="" />
+                <img src={Jim} alt="" />
               </div>
             </div>
 
             <div className="testim-box">
               <p style={{marginBottom: "0px", fontFamily: "Montserrat, sans-serif"}}>"I don't want to buy your shit..Fuck off you DONKEY! "</p>
               <div className="team-card">
-                <img src="img/gordon.JPG" alt="" />
+                <img src={gordon} alt="" />
               </div>
             </div>
 

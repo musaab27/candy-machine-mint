@@ -1,5 +1,12 @@
 import Divider from '@material-ui/core/Divider';
 import Team1 from '../Team1.png';
+import Team2 from '../Team2.png';
+import Team3 from '../Team3.png';
+import Team5 from '../Team5.png';
+import Team7 from '../Team7.png';
+import Team8 from '../Team8.png';
+import Team10 from '../Team10.png';
+
 
 export const Team = () => {
     return (
@@ -14,32 +21,32 @@ export const Team = () => {
                     </div>
                     <div className="team-card" >
                         <h4 className="">KingShit</h4>
-                        <img src="Team2.PNG" alt="" />
+                        <img src={Team2} alt="" />
                         <h5>Shit Operation Officer</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">painXBT</h4>
-                        <img src="Team3.PNG" alt="" />
+                        <img src={Team3} alt="" />
                         <h5>Shit Marketing Officer</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Csuitorart</h4>
-                        <img src="Team8.PNG" alt="" />
+                        <img src={Team8} alt="" />
                         <h5>Shit Artist</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Vozceez</h4>
-                        <img src="Team5.PNG" alt="" />
+                        <img src={Team5} alt="" />
                         <h5>Shit Dev</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Cryptoque</h4>
-                        <img src="Team10.PNG" alt="" />
+                        <img src={Team10} alt="" />
                         <h5>Shit Dev</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">MBashirCrook</h4>
-                        <img src="Team7.PNG" alt="" />
+                        <img src={Team7} alt="" />
                         <h5>Shit Dev</h5>
                     </div>
                 </div>
