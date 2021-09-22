@@ -370,7 +370,7 @@ display: flex;
     position: relative;
     width: 75%;
     margin-left: 70px;
-    height: 260px;
+    height: 270px;
     background: #ffec83;
     color: #111;
     border: 2px solid #000;
@@ -832,6 +832,7 @@ color: var(--main-color);
 .MuiButton-label {
   font-size: 12px;
   font-weight: 700;
+  color: white;
 }
 .makeStyles-root-4 .MuiDialogTitle-root .MuiTypography-root {
   font-size: 18px;
@@ -842,4 +843,13 @@ color: var(--main-color);
 #guide {
   /* background: #38B6FF; */
   background: #7f5144;
+}
+
+@media screen and (max-width: 767px) { 
+
+  #main-img{
+    top: 55px;
+    position:relative;
+padding: 65px 0 65px 0;
+  } 
 }

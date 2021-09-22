@@ -6,13 +6,6 @@ export const Navigation = () => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-transparent' >
       <div className='container' >
-        <div className='navbar-header' >
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            {" "}{
-            " "}
-          </a>{' '}
-        </div>
-
         <div
           className='collapse navbar-collapse'
           id='bs-example-navbar-collapse-1'
@@ -48,11 +41,11 @@ export const Navigation = () => {
                 Team
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#Testimonials' className='page-scroll'>
                 Testimonials
               </a>
-            </li>
+            </li> */}
             
             <li>
               <a href='https://twitter.com/magicsolanashit' className='page-scroll'>

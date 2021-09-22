@@ -158,7 +158,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>October 8th!</li>
+              <li>October 8th, 8PM EST!</li>
             </Typography>
           </AccordionDetails>
         </Accordion>
