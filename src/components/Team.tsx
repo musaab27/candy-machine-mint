@@ -8,37 +8,37 @@ export const Team = () => {
                 <div className="team-grid" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px'}}>
                     <div className="team-card">
                         <h4 className="">LilApeCapital</h4>
-                        <img src={`${process.env.PUBLIC_URL}/ShitsLanding/1.PNG`} alt="" />
+                        <img src="Team1.PNG" alt="" />
                         <h5>Chief Executive Shithead</h5>
                     </div>
                     <div className="team-card" >
                         <h4 className="">KingShit</h4>
-                        <img src="ShitsLanding/2.PNG" alt="" />
+                        <img src="Team2.PNG" alt="" />
                         <h5>Shit Operation Officer</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">painXBT</h4>
-                        <img src="ShitsLanding/3.PNG" alt="" />
+                        <img src="Team3.PNG" alt="" />
                         <h5>Shit Marketing Officer</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Csuitorart</h4>
-                        <img src="ShitsLanding/8.PNG" alt="" />
+                        <img src="Team8.PNG" alt="" />
                         <h5>Shit Artist</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Vozceez</h4>
-                        <img src="ShitsLanding/5.PNG" alt="" />
+                        <img src="Team5.PNG" alt="" />
                         <h5>Shit Dev</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Cryptoque</h4>
-                        <img src="ShitsLanding/10.PNG" alt="" />
+                        <img src="Team10.PNG" alt="" />
                         <h5>Shit Dev</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">MBashirCrook</h4>
-                        <img src="ShitsLanding/7.PNG" alt="" />
+                        <img src="Team7.PNG" alt="" />
                         <h5>Shit Dev</h5>
                     </div>
                 </div>
