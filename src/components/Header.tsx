@@ -43,7 +43,8 @@ const Content = () => {
             <div className="text-6xl columnTwo" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, fontStyle: "italic", fontSize: "22px", color: "black" }}>6,969 <u>Unique</u> Shits!</div>
             <div style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, paddingTop: "10px", width: "70%", textAlign:"center", margin:"auto" }}>Magic Solana Shits are a collection of 6,969 unique generative NFT's existing on the Solana Blockchain. This project is the SHIT! </div>
             <div className="mint-container" style={{justifyContent: "center", display: "block", marginLeft: "auto", marginRight: "auto"}}>
-              <h2  style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, fontSize: "24px"}}>Click the button below to MINT!</h2>
+              <h2  style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, fontSize: "20px"}}>Click the button below to MINT!</h2>
+              <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px"}}>Release Date: <b>October 8th</b></h4>
               <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px"}}>Current Cost: <b>2 SOL</b></h4>
             <div style={{ padding: "13px", justifyContent: "center" }}>
               <Home
@@ -65,36 +66,17 @@ const Content = () => {
 
               <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
                 <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/1.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                  <img src="NewShits/7.JPG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
                 </div>
               </div>
               <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
                 <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/2.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                  <img src="NewShits/4.JPG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
                 </div>
               </div>
               <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
                 <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/3.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
-                </div>
-              </div>
-            </div>
-
-            <div className="columnTwo" style={{ display: "flex" }}>
-
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/5.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
-                </div>
-              </div>
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/6.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
-                </div>
-              </div>
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/7.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                  <img src="NewShits/3.PNG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
                 </div>
               </div>
             </div>
@@ -103,17 +85,36 @@ const Content = () => {
 
               <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
                 <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/8.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                  <img src="NewShits/1.PNG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
                 </div>
               </div>
               <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
                 <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/9.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                  <img src="NewShits/11.JPG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
                 </div>
               </div>
               <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
                 <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src="ShitsLanding/10.png" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                  <img src="NewShits/2.PNG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                </div>
+              </div>
+            </div>
+
+            <div className="columnTwo" style={{ display: "flex" }}>
+
+              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
+                  <img src="NewShits/9.PNG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                </div>
+              </div>
+              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
+                  <img src="NewShits/8.PNG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
+                </div>
+              </div>
+              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
+                  <img src="NewShits/10.PNG" alt="ShitOne" style={{ width: '200px', height: "200px" }} />
                 </div>
               </div>
             </div>
@@ -140,34 +141,3 @@ export const Header = () => {
     <Content />
   );
 };
-
-// <div className="intro text-black">
-//     <div className="container">
-//       <div className="hero md:pb-16">
-//         <div >
-//           <div>
-//             <div className="mx-auto text-center">
-//               <a href="#" className="inline-block align-middle">
-//                 <img src="Shits/BlueShit.png" alt="" className="w-64 h-64 border-2 border-white rounded-xl mb-8" />
-//               </a>
-//             </div>
-//             <div className="text-6xl font-bold text-center leading-12" style={{color: "black", fontFamily: "Montserrat, sans-serif", fontWeight: 900}}>
-//               MAGIC SOLANA SHITS
-//             </div>
-//             {/* <div className="text-4xl font-bold text-center leading-12 mt-4" style={{color: "white"}}>
-//               Shits that last forever
-//             </div> */}
-//             <div className="text-xl md:text-3xl py-4 md:py-8 px-8 md:px-12 lg:px-24" style={{ lineHeight: "1.75em", color: "black"}}>
-//               Magic Solana Shits are 10,000 pieces of shit, programmatically generated through a smart contract on the Solana Blockchain. Magic Shits are comprised of numerous unique traits, allowing for a multitude of unique options. By owning a Magic Shit, you gain access to the shithead community! 
-//             </div>
-
-//           </div>
-
-//         </div>
-//       </div>
-//     </div>
-//     <div className="row">
-//     </div>
-//   </div>
-//style={{position: "absolute", boxSizing: 'border-box', padding: 0, border: 'none', margin: 'auto', display: "block", width: 0, height: 0, minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%'}}
-// </header>

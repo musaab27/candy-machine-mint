@@ -160,7 +160,7 @@ h5 {
 }
 p {
   font-size: 15px;
-  font-family: "Sora", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 p.intro {
   margin: 12px 0 0;
@@ -346,7 +346,7 @@ margin-top: -.75rem;
   color: #5ca9fb;
 }
 .intro p {
-  font-family: "Sora", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 300;
@@ -385,7 +385,7 @@ display: flex;
 /* What Section */
 #what {
   padding: 0 0;
-  background: #36e7bd;
+  background: #25e4b4;
 }
 
 #what h2 {
@@ -735,6 +735,7 @@ display: flex;
 }
 .team-card {
   text-align: center;
+
 }
 .team-card a {
   color: #ffffff;
@@ -773,7 +774,7 @@ padding: 10px 20px;
 color: var(--secound-color);
 font-size: 2rem;
 font-weight: bold;
-font-family: "Sora", sans-serif;
+font-family: "Montserrat", sans-serif;
 }
   
 .testim-content{
@@ -808,14 +809,37 @@ font-size: 1.3rem;
 }
 .testim-box > p{
   color: rgb(255, 255, 255);
-  font-style: italic;
   font-weight: 700;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   font-family:"Montserrat, sans-serif";
-  font-size: 16px;
+  font-size: 28px;
   
 }
 .testim-box-content p{
 color: var(--main-color);
 }
 
+/* Change Wallet Modal */
+.MuiTypography-h6 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+}
+.makeStyles-root-4 .MuiDialogContent-root .MuiListItem-root .MuiButton-root {
+  color: white;
+
+}
+.MuiButton-label {
+  font-size: 12px;
+  font-weight: 700;
+}
+.makeStyles-root-4 .MuiDialogTitle-root .MuiTypography-root {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* Guide */
+#guide {
+  /* background: #38B6FF; */
+  background: #7f5144;
+}

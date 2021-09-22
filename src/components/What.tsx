@@ -13,8 +13,10 @@ export const What = () => {
             <div className="col-xs-12 col-md-6">
             </div>
           </div>
-          <div className="column" style={{width: '100%'}}>
-                    <img src="RoadMapV2-1.png" alt="RoadmapV2" style={{width: "100%", height: "40%"}}/>
+          <div className="" style={{width: '100%', display: "flex"}}>
+          <img src="SideShit.png" alt="SideShit" style={{float: "left", width: "15%", flex: "15%", objectFit: "cover"}} />
+                    <img src="RoadMapV2-1.png" alt="RoadmapV2" style={{float:"left", width: "70%", flex:"70%",  objectFit: "cover"}}/>
+                    <img src="SideShitRight.png" alt="SideShit" style={{float: "left", width: "15%", flex:"15%",  objectFit: "cover"}} />
                     {/* <img src="/RoadMap1.png" alt="RoadMap1" style={{width: "85%", height:"40%"}}/>
                     // <img src="/RoadMap2.png" alt="RoadMap2" style={{width: "85%", height:"40%"}}/>
                     // <img src="/RoadMap3.png" alt="RoadMap3" style={{width: "85%", height:"40%"}}/>
