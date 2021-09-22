@@ -1,4 +1,5 @@
 import Divider from '@material-ui/core/Divider';
+import Team1 from '../Team1.png';
 
 export const Team = () => {
     return (
@@ -8,7 +9,7 @@ export const Team = () => {
                 <div className="team-grid" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px'}}>
                     <div className="team-card">
                         <h4 className="">LilApeCapital</h4>
-                        <img src="Team1.PNG" alt="" />
+                        <img src={Team1} alt="" />
                         <h5>Chief Executive Shithead</h5>
                     </div>
                     <div className="team-card" >
