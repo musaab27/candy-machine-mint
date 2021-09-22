@@ -9,11 +9,11 @@ export const GuideToBuy = () => {
                 <ol style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 500, fontSize: "18px", color: "white" }}>
                     <li style={{marginBottom: "20px"}}>
                         1. Connect your wallet using this button.
-                        <img src="ConnectWallet.png" alt="connectWallet"/>
+                        <img src={`${process.env.PUBLIC_URL}/ConnectWallet.png`} alt="connectWallet"/>
                     </li>
                     <li style={{marginBottom: "20px"}}>
                         2. Select your wallet.
-                        <img src="SelectWallet.png" alt="SelectWallet"/>
+                        <img src={`${process.env.PUBLIC_URL}/SelectWallet.png`} alt="SelectWallet"/>
                     </li>
                     <li style={{marginBottom: "20px"}}>
                         3. Once your wallet is approved, you should be able to mint.
