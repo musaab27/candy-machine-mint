@@ -14,7 +14,7 @@ const TestimonialContainer = () => {
 
             <div className="testim-box" >
               <p style={{marginBottom: "0px", fontFamily: "Montserrat, sans-serif"}}>"These NFTs are literally Shit"</p>
-              <div className="team-card"  >
+              <div className="team-card">
                 <img src="img/forbes.JPG" alt="" style={{marginTop: "100px"}} />
               </div>
             </div>
