@@ -30,7 +30,7 @@ export const Navigation = () => {
             </li>
             {/* <li>
               <a href='#rarity' className='page-scroll'>
-                Rarity
+                Rarity!
               </a>
             </li> */}
             <li>
