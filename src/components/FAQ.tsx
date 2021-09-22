@@ -158,7 +158,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>October 8th</li>
+              <li>October 8th!</li>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -173,7 +173,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>2 SOL</li>
+              <li>2 SOL.</li>
             </Typography>
           </AccordionDetails>
         </Accordion>
