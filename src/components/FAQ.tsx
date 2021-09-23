@@ -211,21 +211,6 @@ export const Faq = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion expanded={expanded === 'panel11'} onChange={handleChange('panel11')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel11bh-content"
-            id="panel11bh-header"
-          >
-            <Typography className={classes.heading}>How to determine rarity? </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>Each trait has a % rarity. Some Shits will have no traits, some will have many, some will have legendary traits. Each Shit is unique and memeworthy, some might be faster than others. It will be up to the secondary market to determine the exact value of such rarity.</li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
         <Accordion expanded={expanded === 'panel12'} onChange={handleChange('panel12')} className={classes.styles}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}

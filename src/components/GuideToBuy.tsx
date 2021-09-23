@@ -16,7 +16,7 @@ export const GuideToBuy = () => {
                         <img src="SelectWallet.png" alt="SelectWallet" style={{display: 'block', marginLeft: 'auto', marginRight: 'auto', }}/>
                     </li>
                     <li style={{marginBottom: "20px", textAlign:"center"}}>
-                        3. Once your wallet is approved, you should be able to mint.
+                        3. Once your wallet is approved, you will be able to mint.
                     </li>
                     <li style={{marginBottom: "20px", textAlign:"center"}}>
                         4. A screen like the image below should appear. Approve the transaction. 
