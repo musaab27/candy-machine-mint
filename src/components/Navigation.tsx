@@ -1,3 +1,4 @@
+
 import DiscordIcon from "./DiscordIcon"
 import TwitterIcon from "./TwitterIcon"
 
@@ -6,11 +7,11 @@ export const Navigation = () => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-transparent' >
       <div className='container' >
-        <div
+        <div 
           className='collapse navbar-collapse'
           id='bs-example-navbar-collapse-1'
         >
-          <ul className='nav navbar-nav navbar-right'>
+          <ul className='nav navbar-nav navbar-right'  >
             <li>
               <a href='#header' className='page-scroll'>
                 Home

@@ -505,7 +505,7 @@ display: flex;
 }
 
 #faq li{
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -545,7 +545,7 @@ display: flex;
 }
 
 #faq p {
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: left;
   font-family: "Sora", sans-serif;
   font-size: 22px;
@@ -786,8 +786,8 @@ gap: 30px;
 
 .testim-box{
 z-index: 2;
-background-color: #FF5C5C;
-padding: 10px 35px;
+background-color: #55ACEE;
+padding: 0px 0px;
 text-align: center;
 margin-left: auto;
 margin-right: auto;

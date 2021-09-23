@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   styles: {
-    background: "#18E4B4",
+    background: "#38B6FF",
     BorderColor: "white",
     borderWidth: "medium"
   },
@@ -42,9 +42,11 @@ export const Faq = () => {
 
     <div id="faq">
       <div className="container">
-        <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center", color: "black" }}>FAQ</h2>
+      <div style={{backgroundColor: "#38B6FF", width: "150px", height: "40px", margin: "auto", border: "2px solid white"}}>
+        <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center", color: "white" }}>FAQ</h2>
+        </div>
 
-        <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className={classes.styles}>
+        <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className={classes.styles} style={{marginTop: "45px"}}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1bh-content"

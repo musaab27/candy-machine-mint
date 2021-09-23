@@ -3,6 +3,7 @@ import Team1 from '../Team1.png';
 import Team2 from '../Team2.png';
 import Team3 from '../Team3.png';
 import Team5 from '../Team5.png';
+import Team6 from '../Team6.png';
 import Team7 from '../Team7.png';
 import Team8 from '../Team8.png';
 import Team10 from '../Team10.png';
@@ -15,7 +16,7 @@ export const Team = () => {
                 <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, marginBottom: "50px" }}>Meet the Team!</h2>
                 <div className="team-grid" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px'}}>
                     <div className="team-card">
-                        <h4 className="">LilApeCapital</h4>
+                        <h4 className="">@LilApeCapital</h4>
                         <img src={Team1} alt="" />
                         <h5>Chief Executive Shithead</h5>
                     </div>
@@ -25,13 +26,18 @@ export const Team = () => {
                         <h5>Shit Operation Officer</h5>
                     </div>
                     <div className="team-card">
-                        <h4 className="">painXBT</h4>
+                        <h4 className="">@painXBT</h4>
                         <img src={Team3} alt="" />
                         <h5>Shit Marketing Officer</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Csuitorart</h4>
                         <img src={Team8} alt="" />
+                        <h5>Shit Artist</h5>
+                    </div>
+                    <div className="team-card">
+                        <h4 className="">@Floatingheadzz</h4>
+                        <img src={Team6} alt="" />
                         <h5>Shit Artist</h5>
                     </div>
                     <div className="team-card">
