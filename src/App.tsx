@@ -6,12 +6,12 @@ import { useMemo } from "react";
 
 
 // import Home from "./Home";
-import {What} from "./components/What";
 import { Header } from "./components/Header";
 import {Faq} from "./components/FAQ";
 import {Team} from "./components/Team";
 import { Navigation } from "./components/Navigation";
 import { GuideToBuy } from "./components/GuideToBuy";
+import { RoadMapTwo } from "./components/RoadMapTwo";
 
 // import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -73,7 +73,7 @@ const App = () => {
             txTimeout={txTimeout}
           /> */}
             <Header/>
-            <What/>
+            <RoadMapTwo/>
             <GuideToBuy/>
             <Faq/>
             <Team/>
