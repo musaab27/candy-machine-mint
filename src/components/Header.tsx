@@ -45,7 +45,7 @@ const Content = () => {
   return (
 
     <div id="header" className="intro" >
-      <div className="container">
+      <div className="container" style={{width: "100%"}}>
         <div className="grid grid-cols-1 md:grid-cols-2" style={{ width: "100%"  }}>
           <div className="columnsTwo" style={{textAlign: "center"}}>
             <img id="main-img" src={MagicSolanaShit} alt="" style={{ marginTop: "0px", display: "block", marginLeft: "auto", marginRight: "auto" }} />
@@ -69,65 +69,65 @@ const Content = () => {
 
           </div>
 
-          <div className="columnsTwo">
-            <div className="columnTwo" style={{ display: "flex", padding: "50px 0 0 0" }}>
 
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%'}}>
-                  <img src={Top7} alt="ShitOne" style={{ width: '200px', height: "200px", padding: "10px"}} />
-                </div>
-              </div>
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src={Top4} alt="ShitOne" style={{ width: '200px', height: "200px", padding: "10px" }} />
-                </div>
-              </div>
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src={Top3} alt="ShitOne" style={{ width: '200px', height: "200px", padding: "10px" }} />
-                </div>
-              </div>
-            </div>
+            <div className="columnTwo rowHeader" style={{ display: "flex", padding: "40px 0 0 0", flexWrap:"wrap", maxWidth: "100%", width:"100%"}}>
 
-            <div className="columnTwo" style={{ display: "flex" }}>
+              <div className="col-md-4 col-6" style={{  maxWidth: '100%',  position: 'relative',  margin: 0, flex: "0 0 auto"}}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden',}}>
+                  <img src={Top7} alt="ShitOne" style={{ height: "auto", padding: "7px", maxWidth:"100%" }} />
+                </div>
+              </div>
+              <div className="col-md-4 col-6" style={{  maxWidth: '100%',  position: 'relative', margin: 0, flex: "0 0 auto" }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
+                  <img src={Top4} alt="ShitOne" style={{ height: "auto", padding: "7px", maxWidth:"100%"  }} />
+                </div>
+              </div>
+              <div className="col-md-4 col-6" style={{  maxWidth: '100%',  position: 'relative', margin: 0, flex: "0 0 auto" }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
+                  <img src={Top3} alt="ShitOne" style={{ height: "auto", padding: "7px", maxWidth:"100%"  }} />
+                </div>
+              </div>
 
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src={Top1} alt="ShitOne" style={{ width: '200px', height: "200px", padding: "10px" }} />
-                </div>
-              </div>
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src={Top11} alt="ShitOne" style={{ width: '200px', height: "200px",  padding: "10px" }} />
-                </div>
-              </div>
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src={Top2} alt="ShitOne" style={{ width: '200px', height: "200px",  padding: "10px" }} />
-                </div>
-              </div>
-            </div>
 
-            <div className="columnTwo" style={{ display: "flex" }}>
 
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src={Top9} alt="ShitOne" style={{ width: '200px', height: "200px", padding: "10px" }} />
-                </div>
-              </div>
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src={Top8} alt="ShitOne" style={{ width: '200px', height: "200px", padding: "10px" }} />
-                </div>
-              </div>
-              <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0, borderRadius: "45px" }}>
-                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%' }}>
-                  <img src={Top10} alt="ShitOne" style={{ width: '200px', height: "200px", padding: "10px" }} />
-                </div>
-              </div>
-            </div>
 
-          </div>
+              <div className="col-md-4 col-6" style={{  maxWidth: '100%',  position: 'relative',  margin: 0,  flex: "0 0 auto",  }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
+                  <img src={Top1} alt="ShitOne" style={{ height: "auto", padding: "7px", maxWidth:"100%"  }} />
+                </div>
+              </div>
+              <div className="col-md-4 col-6" style={{ maxWidth: '100%',  position: 'relative',  margin: 0,  flex: "0 0 auto" }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
+                  <img src={Top11} alt="ShitOne" style={{ height: "auto", padding: "7px", maxWidth:"100%"  }} />
+                </div>
+              </div>
+              <div className="col-md-4 col-6" style={{  maxWidth: '100%', position: 'relative', margin: 0,  flex: "0 0 auto" }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
+                  <img src={Top2} alt="ShitOne" style={{ height: "auto", padding: "7px", maxWidth:"100%"  }} />
+                </div>
+              </div>
+
+
+            
+
+              <div className="col-md-4 col-6" style={{ maxWidth: '100%',  position: 'relative', margin: 0, flex: "0 0 auto" }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
+                  <img src={Top9} alt="ShitOne" style={{  height: "auto", padding: "7px", maxWidth:"100%"  }} />
+                </div>
+              </div>
+              <div className="col-md-4 col-6" style={{  maxWidth: '100%',  position: 'relative',  margin: 0, flex: "0 0 auto"  }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden',  }}>
+                  <img src={Top8} alt="ShitOne" style={{  height: "auto", padding: "7px", maxWidth:"100%"  }} />
+                </div>
+              </div>
+              <div className="col-md-4 col-6" style={{  maxWidth: '100%',  position: 'relative',  margin: 0, flex: "0 0 auto" }}>
+                <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden',  }}>
+                  <img src={Top10} alt="ShitOne" style={{  height: "auto", padding: "7px", maxWidth:"100%" }} />
+                </div>
+              </div>
+              </div>
+
+
 
 
 

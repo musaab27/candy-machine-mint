@@ -324,6 +324,15 @@ margin-left: -.75rem;
 margin-right: -.75rem;
 margin-top: -.75rem;
 }
+.rowHeader {
+  --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
 .intro .hero {
   padding-top: 20%;
 }
@@ -853,4 +862,19 @@ color: var(--main-color);
     position:relative;
 padding: 65px 0 65px 0;
   } 
+}
+
+@media (min-width: 768px) {
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+}
+
+@media screen and (max-width: 768px) { 
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
 }

@@ -18,7 +18,7 @@ export const Navigation = () => {
               </a>
             </li>
             <li>
-              <a href='#what' className='page-scroll'>
+              <a href='#RoadMapTwo' className='page-scroll'>
                 Roadmap
               </a>
             </li>

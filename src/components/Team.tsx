@@ -18,42 +18,42 @@ export const Team = () => {
                     <div className="team-card">
                         <h4 className="">@LilApeCapital</h4>
                         <img src={Team1} alt="" />
-                        <h5>Chief Executive Shithead</h5>
+                        <h5 style={{marginTop:"6px"}}>Chief Executive Shithead</h5>
                     </div>
                     <div className="team-card" >
                         <h4 className="">KingShit</h4>
                         <img src={Team2} alt="" />
-                        <h5>Shit Operation Officer</h5>
+                        <h5 style={{marginTop:"6px"}}>Shit Operation Officer</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">@painXBT</h4>
                         <img src={Team3} alt="" />
-                        <h5>Shit Marketing Officer</h5>
+                        <h5 style={{marginTop:"6px"}}>Shit Marketing Officer</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Csuitorart</h4>
                         <img src={Team8} alt="" />
-                        <h5>Shit Artist</h5>
+                        <h5 style={{marginTop:"6px"}}>Shit Artist</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">@Floatingheadzz</h4>
                         <img src={Team6} alt="" />
-                        <h5>Shit Artist</h5>
+                        <h5 style={{marginTop:"6px"}}>Shit Artist</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Vozceez</h4>
                         <img src={Team5} alt="" />
-                        <h5>Shit Dev</h5>
+                        <h5 style={{marginTop:"6px"}}>Shit Dev</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">Cryptoque</h4>
                         <img src={Team10} alt="" />
-                        <h5>Shit Dev</h5>
+                        <h5 style={{marginTop:"6px"}}>Shit Dev</h5>
                     </div>
                     <div className="team-card">
                         <h4 className="">MBashirCrook</h4>
                         <img src={Team7} alt="" />
-                        <h5>Shit Dev</h5>
+                        <h5 style={{marginTop:"6px"}}>Shit Dev</h5>
                     </div>
                 </div>
                 <Divider style={{ borderWidth: 2 }} />

@@ -42,7 +42,7 @@ export const Faq = () => {
 
     <div id="faq">
       <div className="container">
-      <div style={{backgroundColor: "#38B6FF", width: "150px", height: "40px", margin: "auto", border: "2px solid white"}}>
+      <div style={{backgroundColor: "#38B6FF", width: "150px", height: "45px", margin: "auto", border: "2px solid white"}}>
         <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center", color: "white" }}>FAQ</h2>
         </div>
 
@@ -196,21 +196,6 @@ export const Faq = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel10bh-content"
-            id="panel10bh-header"
-          >
-            <Typography className={classes.heading}>Is there a limit to how many I can purchase? </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>Three Shits per transaction.</li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
         <Accordion expanded={expanded === 'panel12'} onChange={handleChange('panel12')} className={classes.styles}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -251,7 +236,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>Yes, 5% of royalties will be applied to all resales. All royalties will be used for future game development of the Toilet Bowl, a PVP racing game to earn SOL. </li>
+              <li> All royalties will be reinvested back into the community.</li>
             </Typography>
           </AccordionDetails>
         </Accordion>
