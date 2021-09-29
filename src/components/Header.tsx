@@ -10,6 +10,7 @@ import Top9 from '../Top9.png';
 import Top8 from '../Top8.png';
 import Top10 from '../Top10.png';
 import Home from '../Home';
+import ShitBlock from "../ShitBlock.png";
 
 import * as anchor from "@project-serum/anchor";
 
@@ -71,10 +72,10 @@ const Content = () => {
 
 
           <div className="columnTwo rowHeader" style={{ display: "flex", padding: "40px 0 0 0", flexWrap: "wrap", maxWidth: "100%", width: "100%" }}>
-
-            <div className="col-md-4 col-6" style={{ maxWidth: '100%', position: 'relative', margin: 0, flex: "0 0 auto" }}>
+              <img src={ShitBlock} alt="ShitBlock" />
+            {/* <div className="col-md-4 col-6" style={{ maxWidth: '100%', position: 'relative', margin: 0, flex: "0 0 auto" }}>
               <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
-                <img src={Top7} alt="ShitOne" style={{ height: "auto", padding: "7px", maxWidth: "100%" }} />
+                <img src={Top7} alt="ShitOne" style={{ height: "", padding: "7px", maxWidth: "100%" }} />
               </div>
             </div>
             <div className="col-md-4 col-6" style={{ maxWidth: '100%', position: 'relative', margin: 0, flex: "0 0 auto" }}>
@@ -124,7 +125,8 @@ const Content = () => {
               <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
                 <img src={Top10} alt="ShitOne" style={{ height: "auto", padding: "7px", maxWidth: "100%" }} />
               </div>
-            </div>
+            </div> */}
+
           </div>
 
 
@@ -135,9 +137,7 @@ const Content = () => {
         <h2 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, color: "black", fontSize: "36px", textAlign: "center", paddingBottom: "30px", paddingTop: "30px", WebkitTextStroke: "2px", WebkitTextFillColor: "white" }}><i>WELCOME TO THE SHIT-SHOW!</i></h2>
 
       </div>
-      <Testimonials />
-      <div style={{ backgroundColor: "#FFDE59", width: "260px", height: "100px", margin: "auto", }}>
-      </div>
+      {/* <div style={{ backgroundColor: "#FFDE59", width: "260px", height: "100px", margin: "auto", }}> </div> */}
       {/* <div style={{backgroundColor: "#FFDE59", width: "260px", height: "100px", margin: "auto", }}>
          <h2 className=" font-bold text-6xl mb-8" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, fontSize: "28px", textAlign: 'center', color: "white", marginTop: "48px", backgroundColor: "#55ACEE", padding: "12px", border: "2px solid white"}}>Roadmap </h2> 
       </div> */}
