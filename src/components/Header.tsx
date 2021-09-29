@@ -1,21 +1,21 @@
 
 import MagicSolanaShit from '../MagicSolanaShit.png';
-import Top7 from '../Top7.jpg';
-import Top4 from '../Top4.jpg';
-import Top3 from '../Top3.png';
-import Top1 from '../Top1.png';
-import Top11 from '../Top11.jpg';
-import Top2 from '../Top2.png';
-import Top9 from '../Top9.png';
-import Top8 from '../Top8.png';
-import Top10 from '../Top10.png';
+// import Top7 from '../Top7.jpg';
+// import Top4 from '../Top4.jpg';
+// import Top3 from '../Top3.png';
+// import Top1 from '../Top1.png';
+// import Top11 from '../Top11.jpg';
+// import Top2 from '../Top2.png';
+// import Top9 from '../Top9.png';
+// import Top8 from '../Top8.png';
+// import Top10 from '../Top10.png';
 import Home from '../Home';
 import ShitBlock from "../ShitBlock.png";
 
 import * as anchor from "@project-serum/anchor";
 
 // import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import { Testimonials } from './Testimonials';
+// import { Testimonials } from './Testimonials';
 
 
 const Content = () => {

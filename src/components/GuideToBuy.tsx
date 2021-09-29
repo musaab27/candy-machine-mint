@@ -4,7 +4,7 @@ export const GuideToBuy = () => {
     return (
         <div id="guide">
             <div className="container" >
-                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, marginBottom: "20px", color: "white" }}>Minting Guide</h2>
+                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, marginBottom: "20px", color: "white", marginTop:"10px", textDecorationLine:"underline", textDecorationThickness:"2px"}}>Minting Guide</h2>
                 <p style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 500, fontSize: "18px", color: "white", textAlign:"center" }}>Once minting begins, you will be able to connect your wallet and begin minting.</p>
                 <ol style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 500, fontSize: "18px", color: "white" }}>
                     <li style={{marginBottom: "20px", textAlign:"center"}}>

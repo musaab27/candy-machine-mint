@@ -13,7 +13,7 @@ export const Team = () => {
     return (
         <div id="team">
             <div className="container">
-                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, marginBottom: "50px" }}>Meet the Team!</h2>
+                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, marginBottom: "50px", textDecorationLine:"underline", textDecorationThickness:"2px"}}>Meet the Team!</h2>
                 <div className="team-grid" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px'}}>
                     <div className="team-card">
                         <h4 className="">@LilApeCapital</h4>
