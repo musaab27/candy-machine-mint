@@ -452,8 +452,8 @@ display: flex;
 }
 /* Rarity Section */
 #rarity {
-  padding: 100px 0;
-  background: #000000;
+  /* padding: 100px 0; */
+  background: #55acee;
 }
 
 #rarity h2 {
@@ -462,7 +462,7 @@ display: flex;
 }
 
 #rarity p {
-  font-family: "Sora", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: whitesmoke;
   text-align: left;
   font-size: 20px;
@@ -677,9 +677,9 @@ display: flex;
     padding-left: 5em;
   }
 
-  #rarity .bear-img {
+  /* #rarity .bear-img {
     padding-bottom: 2em;
-  }
+  } */
   /* Roadmap */
   #roadmap {
     width: 100%;
@@ -869,7 +869,6 @@ padding: 65px 0 65px 0;
     flex: 0 0 auto;
     width: 33.33333333%;
 }
-
 }
 
 @media screen and (max-width: 768px) { 
@@ -878,3 +877,5 @@ padding: 65px 0 65px 0;
   width: 50%;
 }
 }
+
+

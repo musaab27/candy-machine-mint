@@ -6,7 +6,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
+import RoyaltyDistribution from '../RoyaltyDistribution.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,49 +61,6 @@ export const Faq = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel3bh-content"
-            id="panel3bh-header"
-          >
-            <Typography className={classes.heading}>What is an NFT?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>An NFT is a non-fungible token that represents a unit of data stored on a digital ledger, called a blockchain,
-                that certifies a digital asset to be unique and therefore is not interchangeable.</li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
-        <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2bh-content"
-            id="panel2bh-header"
-          >
-            <Typography className={classes.heading}>How do I get started buying NFTs?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography style={{ color: "white" }}>
-              <li>If you want to be ready to mint, you will need SOL (Solana).</li>
-              <li>
-                Get the <a style={{ color: 'purple' }} href="https://phantom.app/"><b>Phantom Wallet</b></a> Extension for Google Chrome, which is the recommended wallet for SOL.
-              </li>
-              <li>
-                You will have to send SOL to your new Wallet.
-                You can exchange SOL using the Voyager APP, CoinBase, Crypto.com, as well as a variety of other options.
-              </li>
-              <li>
-                Click the Connect Button on the top left of our website to connect your wallet. After connecting you will be able to buy!
-              </li>
-              <li>
-                If you're having trouble, please reach out to us at our <a style={{ color: 'purple' }} href="https://discord.gg/z3e5HvxZ7V" target="_blank" rel="noreferrer"><b>Discord!</b></a>
-              </li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
 
         <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} className={classes.styles}>
           <AccordionSummary
@@ -130,7 +87,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>The beginning stages of the SHITS will stand as simple collectibles that can be used as PFP’s. Shit owners will be eligible to participate in giveaways, airdrops, community decisions, and more. As we move into the later stages of the project, the Shits will be able to be used as avatars in an array of virtual games. The main game being TOILET FLUSH, a play to earn game where Shits can stake .01-.1 solana to enter a race where they race down the sewer system, winner take all.</li>
+              <li>The beginning stages of the SHITS will stand as simple collectibles that can be used as PFP’s. Shit owners will be eligible to participate in giveaways, airdrops, community decisions, and more. All secondary marketplace royalties will be reinvested back into the project and into holder's wallets! Random Minters will also receive blue chip Solana NFTs.</li>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -150,32 +107,17 @@ export const Faq = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel7bh-content"
-            id="panel7bh-header"
-          >
-            <Typography className={classes.heading}>When will the Official drop be?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>October 8th, 8PM EST!</li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
         <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')} className={classes.styles}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel8bh-content"
             id="panel8bh-header"
           >
-            <Typography className={classes.heading}>What is the Official mint price? </Typography>
+            <Typography className={classes.heading}>What is the Official mint price and release date? </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>2 SOL.</li>
+              <li>2 SOL. October 8th 8PM EST!</li>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -196,6 +138,22 @@ export const Faq = () => {
           </AccordionDetails>
         </Accordion>
 
+        <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} className={classes.styles}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel4bh-content"
+            id="panel4bh-header"
+          >
+            <Typography className={classes.heading}>Will there be resale royalties?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              <li> All royalties will be reinvested back into the community.</li>
+              <img src={RoyaltyDistribution} alt="royalties"/>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
         <Accordion expanded={expanded === 'panel12'} onChange={handleChange('panel12')} className={classes.styles}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -211,36 +169,6 @@ export const Faq = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion expanded={expanded === 'panel13'} onChange={handleChange('panel13')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel13bh-content"
-            id="panel13bh-header"
-          >
-            <Typography className={classes.heading}>Where is the digital artwork stored?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>Magic Solana Shits will be stored on Arweave, a decentralized data storage that backs data with sustainable and perpetual endowments, allowing users and developers to truly store data forever.</li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
-        <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel4bh-content"
-            id="panel4bh-header"
-          >
-            <Typography className={classes.heading}>Will there be resale royalties?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li> All royalties will be reinvested back into the community.</li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
         <Accordion expanded={expanded === 'panel15'} onChange={handleChange('panel15')} className={classes.styles}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -252,21 +180,6 @@ export const Faq = () => {
           <AccordionDetails>
             <Typography>
               <li>Yes! We are going to be getting involved with charity after launch so stay tuned for more announcements!</li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
-        <Accordion expanded={expanded === 'panel16'} onChange={handleChange('panel16')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel16bh-content"
-            id="panel16bh-header"
-          >
-            <Typography className={classes.heading}>Where can I trade Magic Solana Shits?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>After our release, we will attempt to list on Solanart.io, Digital Eyes, and get verified on SolSea.</li>
             </Typography>
           </AccordionDetails>
         </Accordion>

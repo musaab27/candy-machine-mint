@@ -12,6 +12,8 @@ import {Team} from "./components/Team";
 import { Navigation } from "./components/Navigation";
 import { GuideToBuy } from "./components/GuideToBuy";
 import { RoadMapTwo } from "./components/RoadMapTwo";
+import { RoadMapHeader } from "./components/RoadMapHeader";
+import { Rarity } from "./components/Rarity";
 
 // import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -73,6 +75,8 @@ const App = () => {
             txTimeout={txTimeout}
           /> */}
             <Header/>
+            <Rarity/>
+            <RoadMapHeader/>
             <RoadMapTwo/>
             <GuideToBuy/>
             <Faq/>

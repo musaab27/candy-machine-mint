@@ -18,15 +18,15 @@ export const Navigation = () => {
               </a>
             </li>
             <li>
+              <a href='#rarity' className='page-scroll'>
+                Rarity
+              </a>
+            </li>
+            <li>
               <a href='#RoadMapTwo' className='page-scroll'>
                 Roadmap
               </a>
             </li>
-            {/* <li>
-              <a href='#rarity' className='page-scroll'>
-                Rarity!
-              </a>
-            </li> */}
             <li>
               <a href='#guide' className='page-scroll'>
                 Minting
