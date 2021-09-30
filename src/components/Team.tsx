@@ -13,8 +13,8 @@ export const Team = () => {
     return (
         <div id="team">
             <div className="container">
-                <div style={{height:"auto", width:"400px", marginLeft:"auto", marginRight:"auto", marginTop:"30px", border:"2px solid white",}}>
-                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, margin:"10px", height:"43px", }}>Meet the Team</h2>
+                <div style={{height:"auto", width:"300px", marginLeft:"auto", marginRight:"auto", marginTop:"30px", border:"2px solid white",}}>
+                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, margin:"10px", height:"80px" }}>Meet the Team</h2>
                 </div>
                 <div className="team-grid" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', marginTop:"30px"}}>
                     <div className="team-card">

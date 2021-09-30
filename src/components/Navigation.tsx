@@ -48,7 +48,7 @@ export const Navigation = () => {
               </a>
             </li> */}
             <li>
-              <a href='https://twitter.com/magicsolanashit' style={{position:"relative", top:"-23px"}} className='page-scroll'>
+              <a href='https://twitter.com/magicsolanashit' style={{position:"relative", top:"-23px", left:"2px"}} className='page-scroll'>
               <TwitterIcon fill='#5D7600' />
               </a>
             </li>
