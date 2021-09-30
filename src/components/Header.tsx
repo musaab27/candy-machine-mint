@@ -49,7 +49,7 @@ const Content = () => {
       <div className="container" style={{ width: "100%" }}>
         <div className="grid grid-cols-1 md:grid-cols-2" style={{ width: "100%" }}>
           <div className="columnsTwo" style={{ textAlign: "center" }}>
-            <img id="main-img" src={MagicSolanaShit} alt="" style={{ marginTop: "0px", display: "block", marginLeft: "auto", marginRight: "auto" }} />
+            <img id="main-img" className="MagicSolImg" src={MagicSolanaShit} alt="" style={{ display: "block", marginLeft: "auto", marginRight: "auto" }} />
             <div className="text-6xl columnTwo" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, fontStyle: "italic", fontSize: "22px", color: "black" }}>6969 <u>Unique</u> Shits!</div>
             <div style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, paddingTop: "10px", width: "70%", textAlign: "center", margin: "auto", color:"black" }}>Magic Solana Shits are a collection of 6969 unique generative NFT's existing on the Solana Blockchain. This project is the SHIT! </div>
             <div style={{ justifyContent: "center", display: "block", marginLeft: "auto", marginRight: "auto" }}>

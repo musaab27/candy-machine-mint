@@ -3684,7 +3684,7 @@ html {
     }
     .navbar-right {
       float: right !important;
-      margin-right: -15px;
+      margin-right: 8px;
     }
     .navbar-right ~ .navbar-right {
       margin-right: 0;
@@ -3737,7 +3737,7 @@ html {
   }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
-    border-color: #e7e7e7;
+    /* border-color: #e7e7e7; */
   }
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,

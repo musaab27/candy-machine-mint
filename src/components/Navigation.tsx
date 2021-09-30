@@ -8,10 +8,10 @@ export const Navigation = () => {
       <div  className=" navbar-default navbar-transparent sticky-position navBorderBox " id='menu' style={{zIndex: 1000, height:"50px"}}>
       <div className='container' >
         <div 
-          className='collapse navbar-collapse' 
+          className='navbar-collapse' 
           id='bs-example-navbar-collapse-1'
         >
-          <ul className=' navbar-nav navbar-right'style={{textDecoration:"none", color:"white"}} >
+          <ul className='navbar-nav navbar-right' style={{textDecoration:"none", color:"white", display:"inline-flex"}} >
             <li>
               <a href='#header' className='page-scroll'>
                 Home
