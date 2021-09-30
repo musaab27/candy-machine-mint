@@ -5,13 +5,13 @@ import TwitterIcon from "./TwitterIcon"
 
 export const Navigation = () => {
   return (
-    <nav id='menu' className='navbar navbar-default navbar-transparent' >
+      <div  className=" navbar-default navbar-transparent sticky-position navBorderBox " id='menu' style={{zIndex: 1000, height:"50px"}}>
       <div className='container' >
         <div 
-          className='collapse navbar-collapse'
+          className='collapse navbar-collapse' 
           id='bs-example-navbar-collapse-1'
         >
-          <ul className='nav navbar-nav navbar-right'  >
+          <ul className=' navbar-nav navbar-right'style={{textDecoration:"none", color:"white"}} >
             <li>
               <a href='#header' className='page-scroll'>
                 Home
@@ -23,15 +23,15 @@ export const Navigation = () => {
               </a>
             </li>
             <li>
-              <a href='#RoadMapTwo' className='page-scroll'>
+              <a href='#RoadMapHeader' className='page-scroll'>
                 Roadmap
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#guide' className='page-scroll'>
                 Minting
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#faq' className='page-scroll'>
                 FAQ
@@ -47,20 +47,20 @@ export const Navigation = () => {
                 Testimonials
               </a>
             </li> */}
-            
             <li>
-              <a href='https://twitter.com/magicsolanashit' className='page-scroll'>
+              <a href='https://twitter.com/magicsolanashit' style={{position:"relative", top:"-23px"}} className='page-scroll'>
               <TwitterIcon fill='#5D7600' />
               </a>
             </li>
             <li>
-              <a href='https://discord.gg/WHmh2mzKyp' className='page-scroll'>
+              <a href='https://discord.gg/WHmh2mzKyp' style={{position:"relative", top:"-23px", left:"18px"}} className='page-scroll'>
                 <DiscordIcon fill='#5D7600' />
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+      </div>
+
   )
 };

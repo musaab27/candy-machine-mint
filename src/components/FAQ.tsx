@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   styles: {
-    background: "#38B6FF",
+    background: "#55acee",
     BorderColor: "white",
     borderWidth: "medium"
   },
@@ -42,8 +42,8 @@ export const Faq = () => {
 
     <div id="faq">
       <div className="container">
-      <div style={{backgroundColor: "#38B6FF", width: "150px", height: "45px", margin: "auto", border: "2px solid white"}}>
-        <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center", color: "white" }}>FAQ</h2>
+      <div style={{backgroundColor: "#55acee", width: "150px", height: "60px", marginTop:"10px", marginLeft:"auto", marginRight:"auto", border: "2px solid white"}}>
+        <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center", color: "white", margin:"10px" }}>FAQ</h2>
         </div>
 
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className={classes.styles} style={{marginTop: "45px"}}>
@@ -102,7 +102,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>@Magicsolanashit</li>
+              <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/magicSolanaShit'>@MagicSolanaShit</a>
             </Typography>
           </AccordionDetails>
         </Accordion>

@@ -10,7 +10,7 @@ import { Header } from "./components/Header";
 import {Faq} from "./components/FAQ";
 import {Team} from "./components/Team";
 import { Navigation } from "./components/Navigation";
-import { GuideToBuy } from "./components/GuideToBuy";
+// import { GuideToBuy } from "./components/GuideToBuy";
 import { RoadMapTwo } from "./components/RoadMapTwo";
 import { RoadMapHeader } from "./components/RoadMapHeader";
 import { Rarity } from "./components/Rarity";
@@ -80,7 +80,7 @@ const App = () => {
             <Rarity/>
             <RoadMapHeader/>
             <RoadMapTwo/>
-            <GuideToBuy/>
+            {/* <GuideToBuy/> */}
             <Faq/>
             <Team/>
           </WalletDialogProvider>

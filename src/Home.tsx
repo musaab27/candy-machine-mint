@@ -16,7 +16,7 @@ import {
   awaitTransactionSignatureConfirmation,
   getCandyMachineState,
   mintOneToken,
-  // shortenAddress,
+   shortenAddress,
 } from "./candy-machine";
 
 const ConnectButton = styled(WalletDialogButton)``;
@@ -41,6 +41,7 @@ const Home = (props: HomeProps) => {
   const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
+  const [itemsRemaining, setItemsRemaining] = useState(0);
 
   const [alertState, setAlertState] = useState<AlertState>({
     open: false,
@@ -152,6 +153,8 @@ const Home = (props: HomeProps) => {
           props.connection
         );
 
+        setItemsRemaining(itemsRemaining);
+        
       setIsSoldOut(itemsRemaining === 0);
       setStartDate(goLiveDate);
       setCandyMachine(candyMachine);
@@ -165,13 +168,14 @@ const Home = (props: HomeProps) => {
         {!wallet.connected ? (
           <ConnectButton color ="secondary" variant="outlined" className="connectbtn" style={{ color: "white", borderColor: "white", backgroundColor: "#000", width: '180px', fontSize: "12px", fontFamily: "Bungee, sans-serif", fontWeight: 900}}><b>Connect Wallet</b></ConnectButton>
         ) : (
-          <MintButton  style={{color: '#FF66C4', borderColor: "#FF66C4", backgroundColor: "#40647C", width: '180px', fontSize: "18px", fontWeight: 900}}
+          <MintButton  style={{color: '#FF66C4', borderWidth:"3px", borderColor: "#FF66C4", backgroundColor: "#40647C", width: '180px', fontSize: "18px", fontWeight: 900}}
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
             variant="outlined"
             color ="secondary"
             className="connectbtn"
           >
+
             {isSoldOut ? (
               "SOLD OUT"
             ) : isActive ? (
@@ -192,15 +196,17 @@ const Home = (props: HomeProps) => {
         )}
       </MintContainer>
 
-      {/* <div style={{color: "white",}}>
-      {wallet.connected && (
-        <p>Address: {shortenAddress(wallet.publicKey?.toBase58() || "")}</p>
+      <div style={{color: "white"}}>
+      {/* {wallet.connected && (
+        <p style={{marginBottom:"10px"}}>Address: {shortenAddress(wallet.publicKey?.toBase58() || "")}</p>
       )}
 
       {wallet.connected && (
-        <p>Balance: {(balance || 0).toLocaleString()} SOL</p>
-      )}
-      </div> */}
+        <p style={{marginBottom:"10px"}}>Balance: {(balance || 0).toLocaleString()} SOL</p>
+      )} */}
+            {wallet.connected && <p style={{fontSize:"18px", fontWeight: 700}}>Remaining Mints: {itemsRemaining}</p>}
+      </div>
+
 
       <Snackbar
         open={alertState.open}

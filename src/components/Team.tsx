@@ -13,10 +13,12 @@ export const Team = () => {
     return (
         <div id="team">
             <div className="container">
-                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, marginBottom: "50px", textDecorationLine:"underline", textDecorationThickness:"2px"}}>Meet the Team!</h2>
-                <div className="team-grid" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px'}}>
+                <div style={{height:"auto", width:"400px", marginLeft:"auto", marginRight:"auto", marginTop:"30px", border:"2px solid white",}}>
+                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, margin:"10px", height:"43px", }}>Meet the Team</h2>
+                </div>
+                <div className="team-grid" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', marginTop:"30px"}}>
                     <div className="team-card">
-                        <h4 className="">@LilApeCapital</h4>
+                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/lilApeCapital'>LilApeCapital</a>
                         <img src={Team1} alt="" />
                         <h5 style={{marginTop:"6px"}}>Chief Executive Shithead</h5>
                     </div>
@@ -26,7 +28,7 @@ export const Team = () => {
                         <h5 style={{marginTop:"6px"}}>Shit Operation Officer</h5>
                     </div>
                     <div className="team-card">
-                        <h4 className="">@painXBT</h4>
+                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/painXBT'>painXBT</a>
                         <img src={Team3} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Marketing Officer</h5>
                     </div>
@@ -36,7 +38,7 @@ export const Team = () => {
                         <h5 style={{marginTop:"6px"}}>Shit Artist</h5>
                     </div>
                     <div className="team-card">
-                        <h4 className="">@Floatingheadzz</h4>
+                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/Floatingheadzz'>Floatingheadzz</a>
                         <img src={Team6} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Artist</h5>
                     </div>
@@ -51,7 +53,7 @@ export const Team = () => {
                         <h5 style={{marginTop:"6px"}}>Shit Dev</h5>
                     </div>
                     <div className="team-card">
-                        <h4 className="">MBashirCrook</h4>
+                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/BAgainstMe'>MBashirCrook</a>
                         <img src={Team7} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Dev</h5>
                     </div>
