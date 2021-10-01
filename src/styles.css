@@ -911,10 +911,10 @@ margin-top: 43px;
 }
 
 .alternatingShit {
-  height: 800px;
+  height: 780px;
   margin: 0 0 0;
   background: url(/src/ShitRotate.png);
-  background-size: 1600px 780px;
+  background-size: 1280px 780px;
   -webkit-animation: mosaic 60s linear infinite;
   animation: mosaic 60s linear infinite;
 }
@@ -923,10 +923,10 @@ margin-top: 43px;
 
 @media screen and (min-width: 768px) {
   .alternatingShit{
-    height:712px;
+    height:780px;
   margin: 0 0 0;
   background: url(/src/ShitRotate.png);
-  background-size: 1424px 712px;
+  background-size: 1280px 780px;
   -webkit-animation: mosaic 60s linear infinite;
   animation: mosaic 60s linear infinite;
   }
@@ -936,7 +936,7 @@ margin-top: 43px;
     height:360px;
   margin: 0 0 0;
   background: url(/src/ShitRotate.png);
-  background-size: 720px 360px;
+  background-size: 590px 360px;
   -webkit-animation: mosaic 60s linear infinite;
   animation: mosaic 60s linear infinite;
   }
