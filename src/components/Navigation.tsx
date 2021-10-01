@@ -48,12 +48,12 @@ export const Navigation = () => {
               </a>
             </li> */}
             <li>
-              <a href='https://twitter.com/magicsolanashit' style={{position:"relative", top:"-23px", left:"2px"}} className='page-scroll'>
+              <a href='https://twitter.com/magicsolanashit' rel="noreferrer" target="_blank" style={{position:"relative", top:"-23px", left:"2px"}} className='page-scroll'>
               <TwitterIcon fill='#5D7600' />
               </a>
             </li>
             <li>
-              <a href='https://discord.gg/WHmh2mzKyp' style={{position:"relative", top:"-23px", left:"18px"}} className='page-scroll'>
+              <a href='https://discord.gg/WHmh2mzKyp' rel="noreferrer" target="_blank" style={{position:"relative", top:"-23px", left:"18px"}} className='page-scroll'>
                 <DiscordIcon fill='#5D7600' />
               </a>
             </li>

@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.pxToRem(25),
     fontWeight: 700,
     fontStyle: "normal",
+    textShadow: "2px 1px 0 #000" 
 
   },
 }));
@@ -43,7 +44,7 @@ export const Faq = () => {
     <div id="faq">
       <div className="container">
       <div style={{backgroundColor: "#55acee", width: "150px", height: "60px", marginTop:"10px", marginLeft:"auto", marginRight:"auto", border: "2px solid white"}}>
-        <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center", color: "white", margin:"10px" }}>FAQ</h2>
+        <h2 className="font-bold text-6xl mb-8" style={{ fontWeight: 900, textAlign: "center", color: "white", margin:"10px", textShadow: "2px 1px 0 #000"  }}>FAQ</h2>
         </div>
 
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className={classes.styles} style={{marginTop: "45px"}}>
@@ -56,7 +57,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>Magic Solana Shits is an NFT project of 6,969 shits with unique, generative assets living on the Solana Blockchain. With a community full of shit heads, our limitations are endless.</li>
+              <li>Magic Solana Shits is an NFT project of 6,969 shits with unique, generative assets living on the Solana Blockchain. With a community full of shit heads, the possibilities are endless.</li>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -102,7 +103,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/magicSolanaShit'>@MagicSolanaShit</a>
+              <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/magicSolanaShit' rel="noreferrer" target="_blank">@MagicSolanaShit</a>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -132,7 +133,7 @@ export const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <li>Yes, Og Shit Stain status members will have a chance to start minting 5 minutes early for a maximum of 1 shit. There will be 1,000 slots open for OGs. Then, the remaining 5,969 shits will be randomly distributed through mint. Additional 1/1 SHIT NFTS will be created for community giveaways, those will not be included in the collection. 
+              <li>Yes, Og Shit Stain status members will have a chance to start minting 5 minutes early. There will be 1,000 slots open for OGs. Then, the remaining 5,969 shits will be randomly distributed through mint. Additional 1/1 SHIT NFTS will be created for community giveaways, those will not be included in the collection. 
 </li>
             </Typography>
           </AccordionDetails>

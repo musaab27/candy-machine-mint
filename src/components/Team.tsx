@@ -14,46 +14,46 @@ export const Team = () => {
         <div id="team">
             <div className="container">
                 <div style={{height:"auto", width:"300px", marginLeft:"auto", marginRight:"auto", marginTop:"30px", border:"2px solid white",}}>
-                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, margin:"10px", height:"80px" }}>Meet the Team</h2>
+                <h2 className="font-bold text-6xl mb-8 team-card" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, margin:"10px", height:"80px", textShadow: "2px 1px 0 #000"  }}>Meet the Team</h2>
                 </div>
                 <div className="team-grid" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', marginTop:"30px"}}>
                     <div className="team-card">
-                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/lilApeCapital'>LilApeCapital</a>
+                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white", textShadow: "1px 1px 0 #000"}} href='https://twitter.com/lilApeCapital' rel="noreferrer" target="_blank">LilApeCapital</a>
                         <img src={Team1} alt="" />
                         <h5 style={{marginTop:"6px"}}>Chief Executive Shithead</h5>
                     </div>
                     <div className="team-card" >
-                        <h4 className="">KingShit</h4>
+                        <h4 style={{textShadow: "1px 1px 0 #000"}}>KingShit</h4>
                         <img src={Team2} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Operation Officer</h5>
                     </div>
                     <div className="team-card">
-                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/painXBT'>painXBT</a>
+                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white", textShadow: "1px 1px 0 #000"}} href='https://twitter.com/painXBT' rel="noreferrer" target="_blank">painXBT</a>
                         <img src={Team3} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Marketing Officer</h5>
                     </div>
                     <div className="team-card">
-                        <h4 className="">Csuitorart</h4>
+                        <h4 style={{textShadow: "1px 1px 0 #000"}}>Csuitorart</h4>
                         <img src={Team8} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Artist</h5>
                     </div>
                     <div className="team-card">
-                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/Floatingheadzz'>Floatingheadzz</a>
+                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white", textShadow: "1px 1px 0 #000"}} href='https://twitter.com/Floatingheadzz' rel="noreferrer" target="_blank">Floatingheadzz</a>
                         <img src={Team6} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Artist</h5>
                     </div>
                     <div className="team-card">
-                        <h4 className="">Vozceez</h4>
+                        <h4 style={{textShadow: "1px 1px 0 #000"}}>Vozceez</h4>
                         <img src={Team5} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Dev</h5>
                     </div>
                     <div className="team-card">
-                        <h4 className="">Cryptoque</h4>
+                        <h4 style={{textShadow: "1px 1px 0 #000"}}>Cryptoque</h4>
                         <img src={Team10} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Dev</h5>
                     </div>
                     <div className="team-card">
-                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white"}} href='https://twitter.com/BAgainstMe'>MBashirCrook</a>
+                    <a style={{fontSize:"24px", textDecorationColor: "white", color:"white", textShadow: "1px 1px 0 #000"}} href='https://twitter.com/BAgainstMe' rel="noreferrer" target="_blank">MBashirCrook</a>
                         <img src={Team7} alt="" />
                         <h5 style={{marginTop:"6px"}}>Shit Dev</h5>
                     </div>

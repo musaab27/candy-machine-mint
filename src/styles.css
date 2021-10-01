@@ -909,3 +909,35 @@ margin-top: 43px;
     padding: 4px 0px 0px 0px;
   }
 }
+
+.alternatingShit {
+  height: 800px;
+  margin: 0 0 0;
+  background: url(/src/ShitRotate.png);
+  background-size: 1600px 780px;
+  -webkit-animation: mosaic 60s linear infinite;
+  animation: mosaic 60s linear infinite;
+}
+@-webkit-keyframes mosaic{0%{background-position:0 0}100%{background-position:-1024px 0}}
+@keyframes mosaic{0%{background-position:0 0}100%{background-position:-1024px 0}}
+
+@media screen and (min-width: 768px) {
+  .alternatingShit{
+    height:712px;
+  margin: 0 0 0;
+  background: url(/src/ShitRotate.png);
+  background-size: 1424px 712px;
+  -webkit-animation: mosaic 60s linear infinite;
+  animation: mosaic 60s linear infinite;
+  }
+}
+@media screen and (max-width: 400px) {
+  .alternatingShit{
+    height:360px;
+  margin: 0 0 0;
+  background: url(/src/ShitRotate.png);
+  background-size: 720px 360px;
+  -webkit-animation: mosaic 60s linear infinite;
+  animation: mosaic 60s linear infinite;
+  }
+}
