@@ -831,23 +831,26 @@ color: var(--main-color);
 }
 
 /* Change Wallet Modal */
+.MuiDialogTitle-root{
+  background-color: #212121!important;
+}
+/* .makeStyles-root-1 .MuiDialogTitle-root {
+  background-color: #fff;
+} */
 .MuiTypography-h6 {
   font-size: 2rem;
   color: white;
-  font-weight: 900;
+  font-weight: 700;
 }
-.makeStyles-root-4 .MuiDialogContent-root .MuiListItem-root .MuiButton-root {
-  color: white;
+.makeStyles-root-1 .MuiDialogTitle-root .MuiTypography-root {
+  font-size: 20px;
+  font-weight:700;
+}
 
-}
 .MuiButton-label {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   color: white;
-}
-.makeStyles-root-4 .MuiDialogTitle-root .MuiTypography-root {
-  font-size: 18px;
-  font-weight: 900;
 }
 
 /* Guide */
@@ -940,4 +943,8 @@ margin-top: 43px;
   -webkit-animation: mosaic 60s linear infinite;
   animation: mosaic 60s linear infinite;
   }
+}
+.connectbtn:hover {
+background-color: #d3a2f9;
+color: white;
 }

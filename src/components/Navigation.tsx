@@ -2,7 +2,6 @@
 import DiscordIcon from "./DiscordIcon"
 import TwitterIcon from "./TwitterIcon"
 
-
 export const Navigation = () => {
   return (
       <div  className=" navbar-default navbar-transparent sticky-position navBorderBox " id='menu' style={{zIndex: 1000, height:"50px"}}>
@@ -61,6 +60,7 @@ export const Navigation = () => {
         </div>
       </div>
       </div>
+
 
   )
 };

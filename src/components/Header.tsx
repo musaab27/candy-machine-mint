@@ -10,38 +10,39 @@ import MagicSolanaShit from '../MagicSolanaShit.png';
 // import Top9 from '../Top9.png';
 // import Top8 from '../Top8.png';
 // import Top10 from '../Top10.png';
-import Home from '../Home';
 // import ShitBlock from "../ShitBlock.png";
-import AnimatedShit from "../animatedShit.gif";
-
-import * as anchor from "@project-serum/anchor";
-
 // import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 // import { Testimonials } from './Testimonials';
+// import Home from '../Home';
+// import * as anchor from "@project-serum/anchor";
+import AnimatedShit from "../animatedShit.gif";
+import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
+
 
 
 const Content = () => {
 
-  const treasury = new anchor.web3.PublicKey(
-    process.env.REACT_APP_TREASURY_ADDRESS!
-  );
+  // const treasury = new anchor.web3.PublicKey(
+  //   process.env.REACT_APP_TREASURY_ADDRESS!
+  // );
 
-  const config = new anchor.web3.PublicKey(
-    process.env.REACT_APP_CANDY_MACHINE_CONFIG!
-  );
+  // const config = new anchor.web3.PublicKey(
+  //   process.env.REACT_APP_CANDY_MACHINE_CONFIG!
+  // );
 
-  const candyMachineId = new anchor.web3.PublicKey(
-    process.env.REACT_APP_CANDY_MACHINE_ID!
-  );
+  // const candyMachineId = new anchor.web3.PublicKey(
+  //   process.env.REACT_APP_CANDY_MACHINE_ID!
+  // );
 
-  // const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
+  // // const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
 
-  const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
-  const connection = new anchor.web3.Connection(rpcHost);
+  // const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
+  // const connection = new anchor.web3.Connection(rpcHost);
 
-  const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
+  // const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
 
-  const txTimeout = 30000; // milliseconds (confirm this works for your project)
+  // const txTimeout = 30000; // milliseconds (confirm this works for your project)
 
 
 
@@ -58,17 +59,15 @@ const Content = () => {
               <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Release Date: <b>October 8th, 8PM EST</b></h4>
               <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Current Cost: <b>2 SOL</b></h4>
               <div style={{ padding: "13px", justifyContent: "center", height:"50px" }}>
-                <Home
-                  candyMachineId={candyMachineId}
-                  config={config}
-                  connection={connection}
-                  startDate={startDateSeed}
-                  treasury={treasury}
-                  txTimeout={txTimeout}
-                />
+                <Link to="/mint" target="_blank" rel="noopener noreferrer">
+                  <Button style={{backgroundColor:"black"}} variant="outlined">
+                    Take Me to Mint!
+                  </Button >
+                </Link>
               </div>
             </div>
-            <div className="flex items-center justify-center mt-4 mb-8 md:mb-4"></div>
+            <div className="flex items-center justify-center mt-4 mb-8 md:mb-4">
+            </div>
 
           </div>
 

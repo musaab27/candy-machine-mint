@@ -3,18 +3,8 @@ import "./styles.css";
 import "./bootstrap.css";
 import "./tailwind.css";
 import { useMemo } from "react";
-
-
-// import Home from "./Home";
-import { Header } from "./components/Header";
-import {Faq} from "./components/FAQ";
-import {Team} from "./components/Team";
-import { Navigation } from "./components/Navigation";
-// import { GuideToBuy } from "./components/GuideToBuy";
-import { RoadMapTwo } from "./components/RoadMapTwo";
-import { RoadMapHeader } from "./components/RoadMapHeader";
-import { Rarity } from "./components/Rarity";
-import { Testimonials } from "./components/Testimonials";
+import { Main } from "./components/Main";
+import { MainContainer } from "./components/MintContainer";
 
 // import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -29,8 +19,9 @@ import {
   ConnectionProvider,
   WalletProvider,
 } from "@solana/wallet-adapter-react";
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
+
 
 
 // const treasury = new anchor.web3.PublicKey(
@@ -66,7 +57,6 @@ const App = () => {
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletDialogProvider>
-        <Navigation />
         {/* <Home
             candyMachineId={candyMachineId}
             config={config}
@@ -75,14 +65,17 @@ const App = () => {
             treasury={treasury}
             txTimeout={txTimeout}
           /> */}
-            <Header/>
-            <Testimonials />
-            <Rarity/>
-            <RoadMapHeader/>
-            <RoadMapTwo/>
-            {/* <GuideToBuy/> */}
-            <Faq/>
-            <Team/>
+         
+            <Router>
+            <Switch>
+            <Route exact path ='/'>
+              <Main/>
+              </Route>
+            <Route exact path='/mint' >
+            <MainContainer/>
+            </Route>
+            </Switch>
+            </Router>
           </WalletDialogProvider>
       </WalletProvider>
     </ConnectionProvider>

@@ -163,12 +163,12 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-
-      <MintContainer>
+      {wallet.connected && <h1 className="font-bold text-6xl mb-4" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "60px", textAlign: "center", color: "white", padding:"4px 0 0 0" }}>Remaining Shits: {itemsRemaining} / 6969</h1>}
+      <MintContainer style={{display:"flex", justifyContent:"center"}}>
         {!wallet.connected ? (
-          <ConnectButton color ="secondary" variant="outlined" className="connectbtn" style={{ color: "white", borderColor: "white", backgroundColor: "#000", width: '180px', fontSize: "12px", fontFamily: "Bungee, sans-serif", fontWeight: 900}}><b>Connect Wallet</b></ConnectButton>
+          <ConnectButton color ="secondary" variant="outlined" className="connectbtn" style={{ color: "white", borderWidth:"5px", borderColor: "white", backgroundColor: "black", width: '250px', fontSize: "12px", fontFamily: "Bungee, sans-serif", fontWeight: 900}}><b>Connect Wallet</b></ConnectButton>
         ) : (
-          <MintButton  style={{color: '#FF66C4', borderWidth:"3px", borderColor: "#FF66C4", backgroundColor: "#40647C", width: '180px', fontSize: "18px", fontWeight: 900}}
+          <MintButton  style={{color: '#FF66C4', borderWidth:"5px", borderColor: "#d3a2fa", backgroundColor: "#40647C", width: '180px', fontSize: "18px", fontWeight: 900}}
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
             variant="outlined"
@@ -204,9 +204,9 @@ const Home = (props: HomeProps) => {
       {wallet.connected && (
         <p style={{marginBottom:"10px"}}>Balance: {(balance || 0).toLocaleString()} SOL</p>
       )} */}
-            {wallet.connected && <p style={{fontSize:"18px", fontWeight: 700}}>Remaining Mints: {itemsRemaining}</p>}
+           
       </div>
-
+      {/* {wallet.connected && <p style={{fontSize:"18px", fontWeight: 700}}>Remaining Mints: {itemsRemaining}</p>} */}
 
       <Snackbar
         open={alertState.open}
