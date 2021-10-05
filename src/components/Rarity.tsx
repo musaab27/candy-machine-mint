@@ -1,4 +1,5 @@
 import RarityTraits from "../RarityTraits.png";
+import GiveAway from "../GiveAway.png";
 
 export const Rarity = () => {
   return (
@@ -10,6 +11,7 @@ export const Rarity = () => {
     <div style={{backgroundColor:"#55ACEE"}}>
     <div style={{position:"relative", backgroundColor:"#55ACEE"}} >
     <div  className="alternatingShit"></div>
+    <img src={GiveAway} alt="Rarity!" style={{ margin: "auto", width: "100%", backgroundColor:"#FFDE59"}}/>
     <div id="rarity" style={{ backgroundColor: "#FFDE59", height:"55px"  }}></div> 
     {/* property for above class if I end up moving the rotating shit ...height: '55px' */}
     <div  style={{ backgroundColor: '#FFDE59', height: "110px" }}>

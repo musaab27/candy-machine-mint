@@ -2,6 +2,7 @@ import SingleGif from "../SingleGif.gif";
 import Home from "../Home";
 import * as anchor from "@project-serum/anchor";
 
+
 export const MainContainer = () => {
   const treasury = new anchor.web3.PublicKey(
     process.env.REACT_APP_TREASURY_ADDRESS!
@@ -28,14 +29,15 @@ export const MainContainer = () => {
   return (
     <div id="root" style={{ background: "#55acee", height: "100vh", width: "100vw" }}>
       <div className="container">
-        <h1 className="font-bold text-6xl mb-8" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "100px", textAlign: "center", color: "white" }}>MAGIC SOLANA SHITS</h1>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <h1 className="font-bold text-6xl mb-8" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "70px", textAlign: "center", color: "white" }}>MAGIC SOLANA SHITS</h1>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#55acee" }}>
           <img src={SingleGif} style={{ width: "400px", height: "400px", display: "block", border: "20px solid white", marginBottom:"10px" }} alt="SingleGif" />
         </div>
-        <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <div style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#55acee"}}>
         <h1 className="font-bold text-6xl" style={{padding:"10px", fontFamily: "Montserrat, sans-serif", fontSize: "40px", textAlign: "center", color: "white"}}>Connect Wallet to Mint!</h1>
         </div>
-        <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <div style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#55acee"}}>
           <Home 
             candyMachineId={candyMachineId}
             config={config}
@@ -45,7 +47,7 @@ export const MainContainer = () => {
             txTimeout={txTimeout}
           />
         </div>
-      </div>
+
     </div>
   );
 };

@@ -11,40 +11,59 @@ import MagicSolanaShit from '../MagicSolanaShit.png';
 // import Top8 from '../Top8.png';
 // import Top10 from '../Top10.png';
 // import ShitBlock from "../ShitBlock.png";
-// import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-// import { Testimonials } from './Testimonials';
-// import Home from '../Home';
-// import * as anchor from "@project-serum/anchor";
+// import { Link } from 'react-router-dom';
 import AnimatedShit from "../animatedShit.gif";
-import { Link } from 'react-router-dom';
-import { Button } from '@material-ui/core';
+import { Button, TextField, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+
 
 
 
 const Content = () => {
 
-  // const treasury = new anchor.web3.PublicKey(
-  //   process.env.REACT_APP_TREASURY_ADDRESS!
-  // );
+  // const [disabled, setDisabled] = useState(true);
+  const history = useHistory();
+  const [open, setOpen] = useState(false);
+  const [password, setPassword] = useState<string>("");
+  const CorrectPassword = "ILOVEPOOP!";
+  const handleOpen = () => setOpen(true);
 
-  // const config = new anchor.web3.PublicKey(
-  //   process.env.REACT_APP_CANDY_MACHINE_CONFIG!
-  // );
+  const handleClose = () => {
+    setOpen(false);
+    setError(false);
+    setErrorMessage("");
+    setPassword("");
+  }
 
-  // const candyMachineId = new anchor.web3.PublicKey(
-  //   process.env.REACT_APP_CANDY_MACHINE_ID!
-  // );
+  const handleChange = (event: any) => {
+    setPassword(event.target.value);
+  }
 
-  // // const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const handleNext = () => {
 
-  // const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
-  // const connection = new anchor.web3.Connection(rpcHost);
+    if (password !== CorrectPassword) {
 
-  // const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
+      setError(true);
+      setErrorMessage("Oh Poop! Please Try Again..");
+    }
+  }
 
-  // const txTimeout = 30000; // milliseconds (confirm this works for your project)
+  const handleSubmit = () => {
+    // setOpen(false);
+    handleNext()
+    if (password === CorrectPassword) {
+      history.push("/mint");
+    } else {
+      setPassword("");
+    }
+  }
 
 
+
+  // const handleClick = () => {}
 
   return (
 
@@ -54,16 +73,50 @@ const Content = () => {
           <div className="columnsTwo" style={{ textAlign: "center" }}>
             <img id="main-img" className="MagicSolImg" src={MagicSolanaShit} alt="" style={{ display: "block", marginLeft: "auto", marginRight: "auto" }} />
             <div className="text-6xl columnTwo" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, fontStyle: "italic", fontSize: "26px", color: "black", textShadow: "2px 1px 0 #fff" }}><strong>6969</strong> <u>Unique</u> Shits!</div>
-            <div style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, paddingTop: "10px", width: "70%", textAlign: "center", margin: "auto", color:"black" }}>Magic Solana Shits are a collection of 6969 unique generative NFT's existing on the Solana Blockchain. This project is the SHIT! </div>
+            <div style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, paddingTop: "10px", width: "70%", textAlign: "center", margin: "auto", color: "black" }}>Magic Solana Shits are a collection of 6969 unique generative NFT's existing on the Solana Blockchain. This project is the SHIT! </div>
             <div style={{ justifyContent: "center", display: "block", marginLeft: "auto", marginRight: "auto" }}>
               <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Release Date: <b>October 8th, 8PM EST</b></h4>
               <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Current Cost: <b>2 SOL</b></h4>
-              <div style={{ padding: "13px", justifyContent: "center", height:"50px" }}>
-                <Link to="/mint" target="_blank" rel="noopener noreferrer">
-                  <Button style={{backgroundColor:"black"}} variant="outlined">
-                    Take Me to Mint!
-                  </Button >
-                </Link>
+              <div style={{ padding: "13px", justifyContent: "center", height: "50px" }}>
+                {/* <Link to={disabled === true ? '/#' : '/mint'} target="_blank" rel="noopener noreferrer"> */}
+                <Button style={{ backgroundColor: "black", border: "3px solid white" }} variant="outlined" onClick={handleOpen}>
+                  Take Me to Mint!
+                </Button >
+                <Dialog open={open}
+                  onClose={handleClose}
+                  aria-labelledby="modal-modal-title"
+                  aria-describedby="Password for Minting"
+                >
+                  <DialogTitle style={{ fontFamily: "Montserrat, sans-serif" }}>Enter Password to Mint!
+                  </DialogTitle>
+                  <DialogContent>
+                    <DialogContentText style={{ fontSize: "16px", color: "black" }}>
+                      Thank you to all our supporters, especially the OGs.
+                      We have set a special password to take you to the minting site. Please enter it to continue.
+                    </DialogContentText>
+                    <TextField style={{ fontSize: "16px" }}
+                      autoFocus
+                      margin="dense"
+                      id="name"
+                      label="Password:"
+                      type="email"
+                      fullWidth
+                      variant="standard"
+                      value={password}
+                      onChange={handleChange}
+                      inputProps={{ style: { fontSize: 16 } }}
+                      InputLabelProps={{ style: { fontSize: 16 } }}
+                      error={error}
+                      helperText={errorMessage}
+
+                    />
+                  </DialogContent>
+                  <DialogActions>
+                    <Button  variant="contained" color="primary" onClick={handleClose}>Cancel</Button>
+                    <Button variant="contained" color="primary" onClick={handleSubmit}>Submit</Button>
+                  </DialogActions>
+                </Dialog>
+                {/* </Link> */}
               </div>
             </div>
             <div className="flex items-center justify-center mt-4 mb-8 md:mb-4">
@@ -73,7 +126,7 @@ const Content = () => {
 
 
           <div className="columnTwo rowHeader" style={{ display: "flex", padding: "5px 0 0 0", flexWrap: "wrap", maxWidth: "100%", width: "100%" }}>
-              <img src={AnimatedShit} alt="ShitBlock" style={{width:"100%"}}/>
+            <img src={AnimatedShit} alt="ShitBlock" style={{ width: "100%" }} />
             {/* <div className="col-md-4 col-6" style={{ maxWidth: '100%', position: 'relative', margin: 0, flex: "0 0 auto" }}>
               <div style={{ boxSizing: 'border-box', display: 'block', maxWidth: '100%', borderRadius: "45px", overflow: 'hidden', }}>
                 <img src={Top7} alt="ShitOne" style={{ height: "", padding: "7px", maxWidth: "100%" }} />
@@ -135,7 +188,7 @@ const Content = () => {
 
 
         </div>
-        <h2  className=" font-bold text-6xl" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, color: "white", fontSize: "36px", textAlign: "center", paddingBottom: "20px", paddingTop: "30px", textShadow: "2px 1px 0 #000" }}><i>WELCOME TO THE SHIT-SHOW!</i></h2>
+        <h2 className=" font-bold text-6xl" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, color: "white", fontSize: "36px", textAlign: "center", paddingBottom: "20px", paddingTop: "30px", textShadow: "2px 1px 0 #000" }}><i>WELCOME TO THE SHIT-SHOW!</i></h2>
       </div>
       {/* <div style={{ backgroundColor: "#FFDE59", width: "260px", height: "100px", margin: "auto", }}> </div> */}
       {/* <div style={{backgroundColor: "#FFDE59", width: "260px", height: "100px", margin: "auto", }}>

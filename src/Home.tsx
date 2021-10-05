@@ -43,6 +43,8 @@ const Home = (props: HomeProps) => {
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
   const [itemsRemaining, setItemsRemaining] = useState(0);
 
+  const [quantity, setQuantity] = useState(0);
+
   const [alertState, setAlertState] = useState<AlertState>({
     open: false,
     message: "",
@@ -55,6 +57,7 @@ const Home = (props: HomeProps) => {
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
 
   const onMint = async () => {
+    for (var i = 0; i < quantity; i++) {
     try {
       setIsMinting(true);
       if (wallet.connected && candyMachine?.program && wallet.publicKey) {
@@ -69,7 +72,7 @@ const Home = (props: HomeProps) => {
           mintTxId,
           props.txTimeout,
           props.connection,
-          "singleGossip",
+          "processed",
           false
         );
 
@@ -118,6 +121,11 @@ const Home = (props: HomeProps) => {
       }
       setIsMinting(false);
     }
+  }
+  };
+
+  const handleQuantityChange = (quantity: number) => {
+    setQuantity(quantity);
   };
 
   useEffect(() => {
@@ -164,12 +172,25 @@ const Home = (props: HomeProps) => {
   return (
     <main>
       {wallet.connected && <h1 className="font-bold text-6xl mb-4" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "60px", textAlign: "center", color: "white", padding:"4px 0 0 0" }}>Remaining Shits: {itemsRemaining} / 6969</h1>}
-      <MintContainer style={{display:"flex", justifyContent:"center"}}>
+      <MintContainer style={{display:"flex", justifyContent:"center", marginBottom:"10px"}}>
         {!wallet.connected ? (
           <ConnectButton color ="secondary" variant="outlined" className="connectbtn" style={{ color: "white", borderWidth:"5px", borderColor: "white", backgroundColor: "black", width: '250px', fontSize: "12px", fontFamily: "Bungee, sans-serif", fontWeight: 900}}><b>Connect Wallet</b></ConnectButton>
         ) : (
+          <div>
+          <div style={{display: "flex", alignItems: "center", justifyContent: "center", padding:"0 0 10px 0"}}>
+          <input type="number" style={{border:"2px solid #d3a2fa", fontWeight:"bold", fontSize:"16px", width: "180px", textAlign:"center", fontFamily:"Montserrat, sans-serif", color:"black", borderRadius:"4px"}} 
+          min={1}
+          max={5}
+          placeholder="Quantity Desired"
+          onChange={(e) =>
+            handleQuantityChange(Number(e.target.value))
+          }
+          value={quantity > 0 ? String(quantity) : ""}
+            /> 
+            </div>
+            <div>
           <MintButton  style={{color: '#FF66C4', borderWidth:"5px", borderColor: "#d3a2fa", backgroundColor: "#40647C", width: '180px', fontSize: "18px", fontWeight: 900}}
-            disabled={isSoldOut || isMinting || !isActive}
+            disabled={isSoldOut || isMinting || !isActive || quantity < 1 || quantity > 5}
             onClick={onMint}
             variant="outlined"
             color ="secondary"
@@ -193,6 +214,8 @@ const Home = (props: HomeProps) => {
               />
             )}
           </MintButton>
+          </div>
+          </div>
         )}
       </MintContainer>
 
