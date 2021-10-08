@@ -26,7 +26,7 @@ const Content = () => {
   const history = useHistory();
   const [open, setOpen] = useState(false);
   const [password, setPassword] = useState<string>("");
-  const CorrectPassword = "ILOVEPOOP!";
+  const CorrectPassword = "wagmi";
   const handleOpen = () => setOpen(true);
 
   const handleClose = () => {
