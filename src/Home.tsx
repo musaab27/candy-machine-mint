@@ -183,13 +183,14 @@ const Home = (props: HomeProps) => {
   return (
     <main>
       {wallet && <h1 className="font-bold text-6xl mb-4" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "60px", textAlign: "center", color: "white", padding:"4px 0 0 0" }}>Remaining Shits: {itemsRemaining + extraNumber} / 6969</h1>}
+      <h3 className="font-bold text-6xl" style={{padding:"10px", fontFamily: "Montserrat, sans-serif", fontSize: "20px", textAlign: "center", color: "white"}}>Maximum Quantity: 5</h3>
       <MintContainer style={{display:"flex", justifyContent:"center", marginBottom:"10px"}}>
         {!wallet ? (
           <ConnectButton color ="secondary" variant="outlined" className="connectbtn" style={{ color: "white", borderWidth:"5px", borderColor: "white", backgroundColor: "black", width: '250px', fontSize: "12px", fontFamily: "Bungee, sans-serif", fontWeight: 900}}><b>Connect Wallet</b></ConnectButton>
         ) : (
           <div>
           <div style={{display: "flex", alignItems: "center", justifyContent: "center", padding:"0 0 10px 0"}}>
-          <input type="number" style={{border:"2px solid #d3a2fa", fontWeight:"bold", fontSize:"16px", width: "180px", textAlign:"center", fontFamily:"Montserrat, sans-serif", color:"black", borderRadius:"4px"}} 
+          <input type="number" style={{border:"2px solid #d3a2fa", justifyContent: "center", fontWeight:"bold", fontSize:"16px", width: "180px", textAlign:"center", fontFamily:"Montserrat, sans-serif", color:"black", borderRadius:"4px"}} 
           min={1}
           max={5}
           placeholder="Quantity Desired"
