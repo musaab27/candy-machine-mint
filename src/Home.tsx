@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import styled from "styled-components";
 import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
@@ -8,7 +8,7 @@ import * as anchor from "@project-serum/anchor";
 
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 
 import {
@@ -38,10 +38,17 @@ export interface HomeProps {
 
 const Home = (props: HomeProps) => {
   const [balance, setBalance] = useState<number>();
-  const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
+
+
+  const [itemsAvailable, setItemsAvailable] = useState(0);
+  const [itemsRedeemed, setItemsRedeemed] = useState(0);
   const [itemsRemaining, setItemsRemaining] = useState(0);
+
+
+  const [startDate, setStartDate] = useState(new Date(props.startDate));
+  const isLive = useMemo(() => startDate <= new Date(), [startDate]);
 
   const [quantity, setQuantity] = useState(0);
 
@@ -51,16 +58,43 @@ const Home = (props: HomeProps) => {
     severity: undefined,
   });
 
-  const [startDate, setStartDate] = useState(new Date(props.startDate));
 
-  const wallet = useWallet();
+
+  const wallet = useAnchorWallet();
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
+
+  const refreshCandyMachineState = () => {
+    (async () => {
+      if (!wallet) return;
+
+      const {
+        candyMachine,
+        goLiveDate,
+        itemsAvailable,
+        itemsRemaining,
+        itemsRedeemed,
+      } = await getCandyMachineState(
+        wallet as anchor.Wallet,
+        props.candyMachineId,
+        props.connection
+      );
+
+      setItemsAvailable(itemsAvailable);
+      setItemsRemaining(itemsRemaining);
+      setItemsRedeemed(itemsRedeemed);
+
+      setIsSoldOut(itemsRemaining === 0);
+      setStartDate(goLiveDate);
+      setCandyMachine(candyMachine);
+    })();
+  };
+
 
   const onMint = async () => {
     for (var i = 0; i < quantity; i++) {
     try {
       setIsMinting(true);
-      if (wallet.connected && candyMachine?.program && wallet.publicKey) {
+      if (wallet && candyMachine?.program) {
         const mintTxId = await mintOneToken(
           candyMachine,
           props.config,
@@ -120,6 +154,7 @@ const Home = (props: HomeProps) => {
         setBalance(balance / LAMPORTS_PER_SOL);
       }
       setIsMinting(false);
+      refreshCandyMachineState();
     }
   }
   };
@@ -137,45 +172,19 @@ const Home = (props: HomeProps) => {
     })();
   }, [wallet, props.connection]);
 
-  useEffect(() => {
-    (async () => {
-      if (
-        !wallet ||
-        !wallet.publicKey ||
-        !wallet.signAllTransactions ||
-        !wallet.signTransaction
-      ) {
-        return;
-      }
-
-      const anchorWallet = {
-        publicKey: wallet.publicKey,
-        signAllTransactions: wallet.signAllTransactions,
-        signTransaction: wallet.signTransaction,
-      } as anchor.Wallet;
-
-      const { candyMachine, goLiveDate, itemsRemaining } =
-        await getCandyMachineState(
-          anchorWallet,
-          props.candyMachineId,
-          props.connection
-        );
-
-        setItemsRemaining(itemsRemaining);
-        
-      setIsSoldOut(itemsRemaining === 1);
-      setStartDate(goLiveDate);
-      setCandyMachine(candyMachine);
-    })();
-  }, [wallet, props.candyMachineId, props.connection]);
+ useEffect(refreshCandyMachineState, [
+   wallet,
+   props.candyMachineId,
+   props.connection,
+ ]);
 
   var extraNumber = 1;
 
   return (
     <main>
-      {wallet.connected && <h1 className="font-bold text-6xl mb-4" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "60px", textAlign: "center", color: "white", padding:"4px 0 0 0" }}>Remaining Shits: {itemsRemaining + extraNumber} / 6969</h1>}
+      {wallet && <h1 className="font-bold text-6xl mb-4" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "60px", textAlign: "center", color: "white", padding:"4px 0 0 0" }}>Remaining Shits: {itemsRemaining + extraNumber} / 6969</h1>}
       <MintContainer style={{display:"flex", justifyContent:"center", marginBottom:"10px"}}>
-        {!wallet.connected ? (
+        {!wallet ? (
           <ConnectButton color ="secondary" variant="outlined" className="connectbtn" style={{ color: "white", borderWidth:"5px", borderColor: "white", backgroundColor: "black", width: '250px', fontSize: "12px", fontFamily: "Bungee, sans-serif", fontWeight: 900}}><b>Connect Wallet</b></ConnectButton>
         ) : (
           <div>
@@ -192,7 +201,7 @@ const Home = (props: HomeProps) => {
             </div>
             <div>
           <MintButton  style={{color: '#FF66C4', borderWidth:"5px", borderColor: "#d3a2fa", backgroundColor: "#40647C", width: '180px', fontSize: "18px", fontWeight: 900}}
-            disabled={isSoldOut || isMinting || !isActive || quantity < 1 || quantity > 5}
+            disabled={isSoldOut || isMinting || !isLive || quantity < 1 || quantity > 5}
             onClick={onMint}
             variant="outlined"
             color ="secondary"
@@ -201,7 +210,7 @@ const Home = (props: HomeProps) => {
 
             {isSoldOut ? (
               "SOLD OUT"
-            ) : isActive ? (
+            ) : isLive ? (
               isMinting ? (
                 <CircularProgress />
               ) : (
@@ -210,8 +219,8 @@ const Home = (props: HomeProps) => {
             ) : (
               <Countdown
                 date={startDate}
-                onMount={({ completed }) => completed && setIsActive(true)}
-                onComplete={() => setIsActive(true)}
+
+                onComplete={() => refreshCandyMachineState()}
                 renderer={renderCounter}
               />
             )}
