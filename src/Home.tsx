@@ -163,15 +163,17 @@ const Home = (props: HomeProps) => {
 
         setItemsRemaining(itemsRemaining);
         
-      setIsSoldOut(itemsRemaining === 0);
+      setIsSoldOut(itemsRemaining === 1);
       setStartDate(goLiveDate);
       setCandyMachine(candyMachine);
     })();
   }, [wallet, props.candyMachineId, props.connection]);
 
+  var extraNumber = 1;
+
   return (
     <main>
-      {wallet.connected && <h1 className="font-bold text-6xl mb-4" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "60px", textAlign: "center", color: "white", padding:"4px 0 0 0" }}>Remaining Shits: {itemsRemaining} / 6969</h1>}
+      {wallet.connected && <h1 className="font-bold text-6xl mb-4" style={{ fontFamily: "Montserrat, sans-serif", fontSize: "60px", textAlign: "center", color: "white", padding:"4px 0 0 0" }}>Remaining Shits: {itemsRemaining + extraNumber} / 6969</h1>}
       <MintContainer style={{display:"flex", justifyContent:"center", marginBottom:"10px"}}>
         {!wallet.connected ? (
           <ConnectButton color ="secondary" variant="outlined" className="connectbtn" style={{ color: "white", borderWidth:"5px", borderColor: "white", backgroundColor: "black", width: '250px', fontSize: "12px", fontFamily: "Bungee, sans-serif", fontWeight: 900}}><b>Connect Wallet</b></ConnectButton>
