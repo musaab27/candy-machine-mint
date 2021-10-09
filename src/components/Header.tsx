@@ -54,7 +54,7 @@ const Content = () => {
   const handleSubmit = () => {
   
     
-      history.push("/");
+      history.push("/mint");
   }
 
   
