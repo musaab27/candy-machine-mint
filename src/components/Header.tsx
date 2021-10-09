@@ -25,43 +25,39 @@ const Content = () => {
   // const [disabled, setDisabled] = useState(true);
   const history = useHistory();
   const [open, setOpen] = useState(false);
-  const [password, setPassword] = useState<string>("");
-  const CorrectPassword = "wagmi";
-  const handleOpen = () => setOpen(true);
+  // const [password, setPassword] = useState<string>("");
+  // const CorrectPassword = "wagmi";
+  // const handleOpen = () => setOpen(true);
 
-  const handleClose = () => {
-    setOpen(false);
-    setError(false);
-    setErrorMessage("");
-    setPassword("");
-  }
+  // const handleClose = () => {
+  //   setOpen(false);
+  //   setError(false);
+  //   setErrorMessage("");
+  //   setPassword("");
+  // }
 
-  const handleChange = (event: any) => {
-    setPassword(event.target.value);
-  }
+  // const handleChange = (event: any) => {
+  //   setPassword(event.target.value);
+  // }
 
-  const [error, setError] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
-  const handleNext = () => {
+  // const [error, setError] = useState(false);
+  // const [errorMessage, setErrorMessage] = useState("");
+  // const handleNext = () => {
 
-    if (password !== CorrectPassword) {
+  //   if (password !== CorrectPassword) {
 
-      setError(true);
-      setErrorMessage("Oh Poop! Please Try Again..");
-    }
-  }
+  //     setError(true);
+  //     setErrorMessage("Oh Poop! Please Try Again..");
+  //   }
+  // }
 
   const handleSubmit = () => {
-    // setOpen(false);
-    handleNext()
-    if (password === CorrectPassword) {
-      history.push("/mint");
-    } else {
-      setPassword("");
-    }
+  
+    
+      history.push("/");
   }
 
-
+  
 
   // const handleClick = () => {}
 
@@ -79,10 +75,10 @@ const Content = () => {
               <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Current Cost: <b>2 SOL</b></h4>
               <div style={{ padding: "13px", justifyContent: "center", height: "50px" }}>
                 {/* <Link to={disabled === true ? '/#' : '/mint'} target="_blank" rel="noopener noreferrer"> */}
-                <Button style={{ backgroundColor: "black", border: "3px solid white" }} variant="outlined" onClick={handleOpen}>
+                <Button style={{ backgroundColor: "black", border: "3px solid white" }} variant="outlined" onClick={handleSubmit}>
                   Take Me to Mint!
                 </Button >
-                <Dialog open={open}
+                {/* <Dialog open={open}
                   onClose={handleClose}
                   aria-labelledby="modal-modal-title"
                   aria-describedby="Password for Minting"
@@ -115,7 +111,7 @@ const Content = () => {
                     <Button  variant="contained" color="primary" onClick={handleClose}>Cancel</Button>
                     <Button variant="contained" color="primary" onClick={handleSubmit}>Submit</Button>
                   </DialogActions>
-                </Dialog>
+                </Dialog> */}
                 {/* </Link> */}
               </div>
             </div>

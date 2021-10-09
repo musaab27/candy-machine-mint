@@ -68,10 +68,10 @@ const App = () => {
          
             <Router>
             <Switch>
-            <Route exact path ='/'>
+            <Route exact path ='/home'>
               <Main/>
               </Route>
-            <Route exact path='/mint' >
+            <Route exact path='/' >
             <MainContainer/>
             </Route>
             </Switch>
