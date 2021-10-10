@@ -37,6 +37,7 @@ export const MainContainer = () => {
         <div style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#55acee"}}>
         <h1 className="font-bold text-6xl" style={{padding:"10px", fontFamily: "Montserrat, sans-serif", fontSize: "40px", textAlign: "center", color: "white"}}>Connect Wallet to Mint!</h1>
         </div>
+        <h1 className="font-bold text-6xl" style={{padding:"10px", fontFamily: "Montserrat, sans-serif", fontSize: "20px", textAlign: "center", color: "white"}}>Price: 2 SOL. Will receive a 1:1 airdrop to holders after mint reaches the halfway point</h1>
         <div style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#55acee"}}>
           <Home 
             candyMachineId={candyMachineId}
