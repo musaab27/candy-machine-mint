@@ -15,7 +15,6 @@ import MagicSolanaShit from '../MagicSolanaShit.png';
 import AnimatedShit from "../animatedShit.gif";
 import { Button, TextField, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
 
 
 
@@ -23,7 +22,6 @@ import { useHistory } from "react-router-dom";
 const Content = () => {
 
   // const [disabled, setDisabled] = useState(true);
-  const history = useHistory();
   const [open, setOpen] = useState(false);
   // const [password, setPassword] = useState<string>("");
   // const CorrectPassword = "wagmi";
@@ -54,7 +52,7 @@ const Content = () => {
   const handleSubmit = () => {
   
     
-      history.push("/");
+
   }
 
   
@@ -71,13 +69,14 @@ const Content = () => {
             <div className="text-6xl columnTwo" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 900, fontStyle: "italic", fontSize: "26px", color: "black", textShadow: "2px 1px 0 #fff" }}><strong>6969</strong> <u>Unique</u> Shits!</div>
             <div style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, paddingTop: "10px", width: "70%", textAlign: "center", margin: "auto", color: "black" }}>Magic Solana Shits are a collection of 6969 unique generative NFT's existing on the Solana Blockchain. This project is the SHIT! </div>
             <div style={{ justifyContent: "center", display: "block", marginLeft: "auto", marginRight: "auto" }}>
-              <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Release Date: <b>October 8th, 8PM EST</b></h4>
-              <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Current Cost: <b>2 SOL</b></h4>
-              <div style={{ padding: "13px", justifyContent: "center", height: "50px" }}>
-                {/* <Link to={disabled === true ? '/#' : '/mint'} target="_blank" rel="noopener noreferrer"> */}
-                <Button style={{ backgroundColor: "black", border: "3px solid white" }} variant="outlined" onClick={handleSubmit}>
-                  Take Me to Mint!
+              {/* <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Release Date: <b>October 8th, 8PM EST</b></h4>
+              <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "20px", color: "Black", textShadow: "2px 1px 0 #fff" }}>Current Cost: <b>2 SOL</b></h4> */}
+              <div style={{ padding: "13px", justifyContent: "center", height: "50px" }}> 
+              <a href="https://digitaleyes.market/collections/Magic%20Solana%20Shits" target="_blank" rel="noreferrer noopener">
+                <Button style={{ backgroundColor: "black", border: "3px solid white" }} variant="outlined"  >
+                  Take me to Secondary!
                 </Button >
+                </a>
                 {/* <Dialog open={open}
                   onClose={handleClose}
                   aria-labelledby="modal-modal-title"
