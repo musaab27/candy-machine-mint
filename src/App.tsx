@@ -71,9 +71,9 @@ const App = () => {
             <Route exact path ='/'>
               <Main/>
               </Route>
-            <Route exact path='/mint' >
+            {/* <Route exact path='/mint' >
             <MainContainer/>
-            </Route>
+            </Route> */}
             </Switch>
             </Router>
           </WalletDialogProvider>
