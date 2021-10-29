@@ -10,11 +10,12 @@ export const Rarity = () => {
     // </div>
     <div style={{backgroundColor:"#55ACEE"}}>
     <div style={{position:"relative", backgroundColor:"#55ACEE"}} >
-    <div  className="alternatingShit"></div>
-    <div style={{backgroundColor:"#FFDE59"}}>
+    <div   className="alternatingShit"></div>
+    {/* <div style={{backgroundColor:"#FFDE59"}}>
     <img src={GiveAway} alt="Rarity!" style={{ margin: "auto", width: "80%", backgroundColor:"#FFDE59"}}/>
-    </div>
-    <div id="rarity" style={{ backgroundColor: "#FFDE59", height:"55px"  }}></div> 
+    </div> */}
+    <div id="rarity"></div>
+    <div  style={{ backgroundColor: "#FFDE59", height:"55px"  }}></div> 
     {/* property for above class if I end up moving the rotating shit ...height: '55px' */}
     <div  style={{ backgroundColor: '#FFDE59', height: "110px" }}>
         <div style={{ backgroundColor: "#FFDE59", width: "250px", height: "100px", margin: "auto" }}>
