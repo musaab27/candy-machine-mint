@@ -108,7 +108,7 @@ export const Faq = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')} className={classes.styles}>
+        {/* <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')} className={classes.styles}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel8bh-content"
@@ -121,7 +121,7 @@ export const Faq = () => {
               <li>2 SOL. October 8th 8PM EST!</li>
             </Typography>
           </AccordionDetails>
-        </Accordion>
+        </Accordion> */}
 
         <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')} className={classes.styles}>
           <AccordionSummary
@@ -135,22 +135,6 @@ export const Faq = () => {
             <Typography>
               <li>Yes, Og Shit Stain status members will have a chance to start minting 5 minutes early. There will be 1,000 slots open for OGs. Then, the remaining 5,969 shits will be randomly distributed through mint. Additional 1/1 SHIT NFTS will be created for community giveaways, those will not be included in the collection. 
 </li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
-        <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} className={classes.styles}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel4bh-content"
-            id="panel4bh-header"
-          >
-            <Typography className={classes.heading}>Will there be resale royalties?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li> All royalties will be reinvested back into the community.</li>
-              <img src={RoyaltyDistribution} alt="royalties"/>
             </Typography>
           </AccordionDetails>
         </Accordion>
